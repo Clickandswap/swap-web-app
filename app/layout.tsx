@@ -13,8 +13,14 @@ import "./globals.css";
 // });
 
 
-const inter = Inter({ subsets: ["latin"] });
-const space_grotesk = Space_Grotesk({subsets: ["latin"]});
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: "--font-inter"
+});
+const space_grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space_grotesk"
+});
 
 export const metadata: Metadata = {
   title: "ClickNSwap",
@@ -29,9 +35,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${space_grotesk.variable}`}
     >
-      <body className={`${inter.className} ${space_grotesk.className}`}>{children}</body>
+      <body className="font-inter">{children}</body>
     </html>
   );
 }
