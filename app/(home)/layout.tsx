@@ -1,16 +1,19 @@
-import React from 'react'
+import React from "react";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
+import FirstToExperience from "@/components/home-constant/first-to-experience";
 
-function HomeLayout({ children }: {children: React.ReactNode})  {
+function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
-
-      <div className="flex flex-1 flex-col overflow-hidden">
-        {/* <Navbar /> */}
-        <nav>This is the navbar</nav>
-        <main className="flex-1 overflow-y-auto bg-background p-6">
-          {children}
-        </main>
-    </div>
-  )
+    <main className="flex flex-1 flex-col overflow-hidden">
+      <Navbar />
+      <main className="flex-1 overflow-y-auto bg-background">
+        {children}
+      </main>
+      <FirstToExperience />
+      <Footer />
+    </main>
+  );
 }
 
 export default HomeLayout;
