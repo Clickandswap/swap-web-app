@@ -62,20 +62,20 @@ function Footer() {
       </div>
 
       <div>
-        {/* <Image
+        <Image
           src={"/logos/ClickNSwap.png"}
-          width={100}
-          height={100}
+          width={400}
+          height={300}
           alt="ClickNSwap Big"
           className="object-contain w-full"
-        /> */}
+        />
 
-        <h1 className="text-9xl w-full text-[#2D3E49] font-extrabold text-center">
+        {/* <h1 className="text-9xl w-full text-[#2D3E49] font-extrabold text-center">
           ClickNSwap
-        </h1>
+        </h1> */}
       </div>
 
-      <div className="flex justify-between items-center mt-16 text-xs">
+      <div className="flex justify-between items-center mt-20 text-xs">
         <p className="text-low_blue"> © 2026 ClickNSwap </p>
         <div className="flex itemc-center gap-4 text-low_blue">
           <Link

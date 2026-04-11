@@ -5,7 +5,7 @@ import { IoLogoAppleAppstore } from "react-icons/io5";
 
 function FirstToExperience() {
   return (
-    <main className="bg-light h-72 flex justify-between items-center sm:ps-28 ps-6  overflow-hidden">
+    <main className="bg-light h-72 flex justify-between items-center sm:ps-28 ps-6 overflow-hidden">
       <div className="w-[35%]">
         <h4 className="text-dark text-space_grotesk font-semibold md:text-3xl text-lg">
           Be First to Experience the Future of Crypto
@@ -22,12 +22,12 @@ function FirstToExperience() {
         </div>
       </div>
 
-      <div className="bg-[url(/first_to_experience/bitcoin_bg.png)] bg-cover bg-center w-[55%] h-full flex justify-center">
+      <div className="bg-[url(/first_to_experience/bitcoin_bg.png)] bg-cover bg-center w-[60%] h-full flex justify-center">
         <Image
           src={"/first_to_experience/bitcoin.png"}
           alt="Bitcoins Image"
-          width={50}
-          height={50}
+          width={300}
+          height={200}
           className="w-auto h-auto"
         />
       </div>

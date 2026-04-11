@@ -20,7 +20,7 @@ function Faqs() {
     },
   ];
   return (
-    <main className="sm:px-28 px-6 py-6 flex justify-between text-[#222F37]">
+    <main className="sm:px-28 px-6 py-12 flex justify-between text-[#222F37]">
       <div className="w-[35%]">
         <h3 className="text-space_grotesk font-bold md:text-4xl">
           Got Questions? We've Got Answers
