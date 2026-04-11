@@ -18,6 +18,7 @@ const config: Config = {
         danger: "#EF4444",
         dark: "#111111",
         light: "#ffffff",
+        card_bg: "#FAFAFA"
       },
 
       fontFamily: {
