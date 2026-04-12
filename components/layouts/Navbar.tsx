@@ -14,14 +14,17 @@ function Navbar() {
       {/* first navbar section */}
       <section className="flex items-center justify-between px-10 sm:px-28 py-4">
         <div className="relative w-18 h-4 sm:w-24 sm:h-4 md:w-36 md:h-8">
-          <Image
-            src="/logos/clicknswap_word_logo.png"
-            alt="ClickNSwap Logo"
-            fill
-            sizes="(max-width: 640px) 10rem, (max-width: 1024px) 12rem, 14rem"
-            className="object-contain"
-            loading="eager"
-          />
+          <Link href="/">
+            {" "}
+            <Image
+              src="/logos/clicknswap_word_logo.png"
+              alt="ClickNSwap Logo"
+              fill
+              sizes="(max-width: 640px) 10rem, (max-width: 1024px) 12rem, 14rem"
+              className="object-contain"
+              loading="eager"
+            />{" "}
+          </Link>
         </div>
 
         <div className="flex items-center">
@@ -73,8 +76,12 @@ function Navbar() {
         </div>
 
         <div className="md:w-1/4 flex items-center gap-2 justify-end">
-          <Button className="rounded-full border border-primary px-6 w-1/2 text-primary">Login</Button>
-          <Button className="text-dark bg-primary rounded-full border-none px-6 w-1/2">Get Started</Button>
+          <Button className="rounded-full border border-primary px-6 w-1/2 text-primary">
+            Login
+          </Button>
+          <Button className="text-dark bg-primary rounded-full border-none px-6 w-1/2">
+            Get Started
+          </Button>
         </div>
       </section>
     </nav>

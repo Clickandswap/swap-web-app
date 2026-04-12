@@ -2,10 +2,10 @@ import Image from "next/image";
 
 function GettingStarted() {
   return (
-    <main className="bg-[#E4EDD9] sm:ps-28 ps-6 text-[#222F37] flex justify-between">
-      <div className="w-[30%] py-14 self-center">
+    <main className="bg-[#E4EDD9] sm:ps-28 ps-6 text-[#222F37] flex justify-between pt-8">
+      <div className="w-[35%] py-14 self-center">
         <h3 className="text-space_grotesk font-bold md:text-4xl text-lg">
-          Getting Started In Just Few Seconds
+          Getting Started In Just Few Steps
         </h3>
         <p className="text-base mt-6 mb-10">
           We simplify the process—we’ll take care of the crypto-to-fiats. Your
