@@ -23,3 +23,21 @@ export const cardDetails = [
       "Access the best rates from top-tier trusted liquidity partners and strong risk management.",
   },
 ];
+
+export const portfolioCard = [
+  {
+    id: 1,
+    img_path: "/landing_page/cryptos.png",
+    title: "P2P Agent",
+    details:
+      "Our platform provides a streamlined crypto-to-fiat and fiat-to-crypto exchange, allowing users to swap digital assets such as BTC, USDT, USDC, and more with ease",
+  },
+
+  {
+    id: 2,
+    img_path: "/landing_page/btc_eth.png",
+    title: "Swap Crypto Quickly & Securely",
+    details:
+      "Flawless essentials. Easily send tokens and collectibles with the fewest taps,",
+  },
+];
