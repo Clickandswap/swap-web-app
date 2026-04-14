@@ -41,3 +41,55 @@ export const portfolioCard = [
       "Flawless essentials. Easily send tokens and collectibles with the fewest taps,",
   },
 ];
+
+export const experienceCards = [
+  {
+    id: 1,
+    name: "Tommy Joshua",
+    profession: "Freelance",
+    experience:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+  },
+
+  {
+    id: 2,
+    name: "Tommy Joshua",
+    profession: "Freelance",
+    experience:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+  },
+
+  {
+    id: 3,
+    name: "Tommy Joshua",
+    profession: "Freelance",
+    experience:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."',
+  },
+];
+
+export const madeEasyCard = [
+  {
+    id: 1,
+    name: "Send",
+    details:
+      "Send money to anyone, anywhere in seconds. Transactions are fast, reliable, and designed to keep things simple every time.",
+    img_path: "/product_page/send_receipt.png",
+  },
+
+  {
+    id: 2,
+    name: "Swap",
+    details:
+      "Convert your crypto instantly without switching platforms. The process is smooth, fast, and built for everyday use.",
+    img_path: "/product_page/swap_view.png",
+  },
+
+  {
+    id: 3,
+    name: "Receive",
+    details:
+      "Accept payments from anywhere in the world without limits. Track every transaction easily with instant confirmations",
+    img_path: "/product_page/receive_receipt.png",
+  },
+];
