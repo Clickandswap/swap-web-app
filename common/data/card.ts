@@ -93,3 +93,21 @@ export const madeEasyCard = [
     img_path: "/product_page/receive_receipt.png",
   },
 ];
+
+export const companyGoals = [
+  {
+    id: 1,
+    name: "Our Mission",
+    details:
+      "Our mission is to simplify digital finance and make it accessible to anyone, regardless of location or background. We are focused on creating a platform where sending, receiving, swapping, and spending money becomes effortless, giving users full control over their financial lives without unnecessary barriers.",
+    img_path: "/company_page/mission_view.png",
+  },
+
+  {
+    id: 2,
+    name: "Our Vision",
+    details:
+      "We envision a future where financial freedom is not defined by borders, banks, or restrictions. A future where anyone can transact globally with confidence, speed, and security. Our goal is to become a trusted bridge between digital assets and everyday financial needs, empowering people to live and transact without limits.",
+    img_path: "/company_page/vision_view.png",
+  },
+];

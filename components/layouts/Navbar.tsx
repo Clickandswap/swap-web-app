@@ -19,10 +19,12 @@ function Navbar() {
             <Image
               src="/logos/clicknswap_word_logo.png"
               alt="ClickNSwap Logo"
-              fill
-              sizes="(max-width: 640px) 10rem, (max-width: 1024px) 12rem, 14rem"
-              className="object-contain"
+              // fill
+              // sizes="(max-width: 640px) 10rem, (max-width: 1024px) 12rem, 14rem"
+              className="object-contain w-auto h-auto"
               loading="eager"
+              width={100}
+              height={100}
             />{" "}
           </Link>
         </div>
