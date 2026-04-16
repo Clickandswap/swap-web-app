@@ -20,18 +20,18 @@ function Faqs() {
     },
   ];
   return (
-    <main className="sm:px-28 px-6 py-12 flex justify-between text-[#222F37]">
-      <div className="w-[35%]">
-        <h3 className="text-space_grotesk font-bold md:text-4xl">
+    <main className="sm:px-28 px-6 py-12 flex justify-between sm:flex-row flex-col text-[#222F37]">
+      <div className="sm:w-[35%] w-full">
+        <h3 className="text-space_grotesk font-bold md:text-4xl text-2xl">
           Got Questions? We've Got Answers
         </h3>
-        <p className="text-base my-8">
+        <p className="sm:text-base text-xs my-8">
           We know you would have some questions. Here’s are some helpful tips on
           frequently issues we’ve received over time.
         </p>
       </div>
 
-      <div className="w-[55%]">
+      <div className="sm:w-[55%] w-full">
         {text.map((question) => {
           return (
             <div

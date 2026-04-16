@@ -111,3 +111,26 @@ export const companyGoals = [
     img_path: "/company_page/vision_view.png",
   },
 ];
+
+export const developerCard = [
+  {
+    id: 1,
+    name: "Easy-to-use Api References",
+    details:
+      "Enjoy our powerful and user-friendly API, designed to seamlessly integrate with your applications and streamline your workflows.",
+  },
+
+  {
+    id: 2,
+    name: "Versatile SDKs",
+    details:
+      "Get started with the SDK you need. Use pre-built components and API libraries to create applications for a variety of use cases.",
+  },
+
+  {
+    id: 3,
+    name: "Event-driven developer webhooks",
+    details:
+      "Get real-time notifications for events happening within your workspace and ensure that all relevant event types are broadcasted to your designated endpoint.",
+  },
+];

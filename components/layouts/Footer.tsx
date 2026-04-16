@@ -44,7 +44,7 @@ function Footer() {
         })}
       </footer>
 
-      <div className="text-low_blue text-[13.67px] w-[60%] my-20 mx-auto">
+      <div className="text-low_blue text-[13.67px] sm:w-[60%] my-20 mx-auto">
         <p className="text-center w-full">
           All material found on this website is shared for educational use and
           general insight into the features and products available through
@@ -75,9 +75,9 @@ function Footer() {
         </h1> */}
       </div>
 
-      <div className="flex justify-between items-center mt-20 text-xs">
+      <div className="flex sm:flex-row flex-col justify-between items-center mt-20 text-xs">
         <p className="text-low_blue"> © 2026 ClickNSwap </p>
-        <div className="flex itemc-center gap-4 text-low_blue">
+        <div className="flex item-center justify-between gap-4 text-low_blue">
           <Link
             href={"/terms"}
             className="link link-hover my-1 inline-block text-low_blue"
