@@ -3,8 +3,8 @@ import Button from "../ui/Button";
 
 function NeedHelp() {
   return (
-    <main className="sm:mx-28 my-12 px-8 sm:py-10 py-0 pt-20 bg-[url(/company_page/gradient_bg.png)] bg-cover text-light sm:rounded-3xl sm:relative sm:h-75">
-      <div className="sm:w-[40%] mb-4 sm:mb-0">
+    <main className="md:mx-28 my-12 px-8 md:py-10 py-0 pt-20 bg-[url(/company_page/gradient_bg.png)] bg-cover text-light md::rounded-3xl sm:relative md:h-75">
+      <div className="md:w-[40%] mb-4 md:mb-0">
         <h3 className="font-bold sm:text-4xl text-2xl font-space_grotesk">
           Need Help? Talk to us
         </h3>
@@ -23,7 +23,7 @@ function NeedHelp() {
         alt="Need Help? Image"
         width={400}
         height={200}
-        className="sm:w-auto w-full sm:h-auto h-full sm:object-contain object-cover sm:absolute right-0 -top-31.5 bottom-0"
+        className="md:w-auto w-full md:h-auto h-full md:object-contain object-cover md:absolute right-0 -top-31.5 bottom-0"
         loading="lazy"
       />
     </main>

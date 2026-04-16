@@ -1,10 +1,19 @@
-import React from 'react';
+import GettingStarted from "@/components/home-constant/getting-started";
+import HeroSection from "./_components/HeroSection";
+import Solutions from "./_components/Solutions";
+import NeedHelp from "@/components/home-constant/NeedHelp";
+import Faqs from "@/components/home-constant/faqs";
+
 
 function DeveloperPage() {
   return (
-    <main className="flex flex-col items-center justify-between text-primary">
-        This is the Developer's Page
-    </main>
+    <>
+      <HeroSection />
+      <Solutions />
+      <NeedHelp />
+      <GettingStarted />
+      <Faqs />
+    </>
   )
 }
 

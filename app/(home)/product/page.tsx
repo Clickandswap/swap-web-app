@@ -1,10 +1,19 @@
-import React from 'react'
+import Card from "./_components/Card";
+import HeroSection from "./_components/HeroSection";
+import MadeEasy from "./_components/MadeEasy";
+import MadeSimple from "./_components/MadeSimple";
+import GettingStarted from "@/components/home-constant/getting-started";
+
 
 function ProductPage() {
   return (
-    <main className="flex flex-col items-center justify-between text-primary">
-        This is the Product Page
-    </main>
+    <>
+      <HeroSection />
+      <MadeEasy />
+      <Card />
+      <MadeSimple />
+      <GettingStarted />
+    </>
   )
 }
 
