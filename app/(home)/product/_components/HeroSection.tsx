@@ -1,11 +1,10 @@
 import Button from "@/components/ui/Button";
 import Image from "next/image";
-import React from "react";
 import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 
 function HeroSection() {
   return (
-    <main className="bg-lineear-to-b from-[#FDF4C2] to-light flex md:flex-row flex-col md:h-dvh h-200  overflow-hidden relative items-center" >
+    <main className="bg-linear-to-r from-light to-[#FDF4C2] flex md:flex-row flex-col md:h-dvh h-205 overflow-hidden relative items-center">
       <div className="md:w-[50%] w-full md:px-28 px-6 py-12 text-dark">
         <h2 className="font-bold sm:text-5xl text-2xl font-space_grotesk">
           Experience crypto, effortlessly with ClickNSwap
@@ -26,15 +25,16 @@ function HeroSection() {
         </div>
       </div>
 
-
+      <div className="bg-[url(/product_page/grid_line.png)] h-full md:w-1/2 w-full md:px-0 px-6">
         <Image
           src={"/clicknswap_mockup/clicknswap_mockup_two.png"}
           alt="ClickNSwap Dashboard"
-          width={200}
-          height={100}
-          className="w-auto h-auto object-cover md:absolute right-30 -bottom-65"
+          width={300}
+          height={200}
+          className="md:w-auto md:h-auto object-contain md:absolute right-30 -bottom-115"
+          loading="eager"
         />
-
+      </div>
     </main>
   );
 }

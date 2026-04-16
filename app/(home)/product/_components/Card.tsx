@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Card() {
   return (
-    <main className="bg-dark text-light h-188 relative sm:px-28 px-6 py-18 overflow-hidden">
+    <main className="bg-dark text-light md:h-188 relative sm:px-28 px-6 md:py-18 pt-18 overflow-hidden">
       <div className="md:w-[35%] w-full">
         <h3 className="font-bold sm:text-4xl text-2xl font-space_grotesk">
           Your Card, Your Way, Virtual or physical ⎯ it’s your choice
@@ -19,29 +19,29 @@ function Card() {
           From wallet to real world — instantly.
         </p>
 
-        <div className="flex justify-between my-12 w-[65%]">
+        <div className="flex justify-between gap-3 my-12 w-[65%]">
           <Link
             href={"#"}
-            className="transition-transform ease-in-out duration-100 hover:-translate-y-1"
+            className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
           >
             <Image
               src={"/store_badges/playstore_badge.png"}
               alt="Playstore Badge"
               width={100}
               height={100}
-              className="object-cover w-auto h-auto"
+              className="object-cover w-full md:h-auto"
             />
           </Link>
           <Link
             href={"#"}
-            className="transition-transform ease-in-out duration-100 hover:-translate-y-1"
+            className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
           >
             <Image
               src={"/store_badges/app_store_badge.png"}
               alt="App Store Badge"
               width={100}
               height={100}
-              className="object-cover w-auto h-auto"
+              className="object-cover w-full md:h-auto"
             />
           </Link>
         </div>
@@ -54,7 +54,7 @@ function Card() {
         alt="Card"
         width={700}
         height={300}
-        className="w-auto h-auto object-cover absolute -bottom-65 right-20"
+        className="md:w-auto md:h-auto w-full md:object-cover object-contain md:absolute -bottom-65 right-20"
       />
 
       {/* leafs */}
@@ -63,14 +63,14 @@ function Card() {
         alt="Big leaf"
         width={100}
         height={100}
-        className="w-auto h-auto object-contain absolute bottom-0 left-0"
+        className="w-auto h-auto object-contain absolute bottom-0 left-0 hidden md:block"
       />
       <Image
         src={"/landing_page/small_leaf.png"}
         alt="Small leaf"
         width={100}
         height={100}
-        className="w-auto h-auto object-contain absolute bottom-0 left-36"
+        className="w-auto h-auto object-contain absolute bottom-0 left-36 hidden md:block"
       />
     </main>
   );

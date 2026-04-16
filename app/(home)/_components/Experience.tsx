@@ -3,20 +3,20 @@ import Image from "next/image";
 
 function Experience() {
   return (
-    <main className="sm:px-28 px-6 sm:py-16 bg-linear-to-b from-[#FFFFFF] to-[#FDF4C2] text-dark">
-      <div className="text-[#222F37] w-[35%]">
-        <h2 className="font-space_grotesk text-4xl font-bold">
+    <main className="sm:px-28 px-6 py-16 bg-linear-to-b from-[#FFFFFF] to-[#FDF4C2] text-dark">
+      <div className="text-[#222F37] md:w-[35%]">
+        <h2 className="font-space_grotesk md:text-4xl text-3xl font-bold">
           We deliver experience
         </h2>
 
-        <p className="font-medium text-base">
+        <p className="font-medium md:text-base text-sm">
           Here's how ClickNSwap is helping{" "}
           <span className="font-bold">100K</span> people spend their money
         </p>
       </div>
 
-      <div className="flex justify-between gap-4 mt-18">
-        <div className="w-[25%] bg-[#FFFFFF] px-6 py-4 rounded-lg flex flex-col justify-end">
+      <div className="flex flex-col md:flex-row justify-between gap-4 mt-18">
+        <div className="md:w-[25%] w-full bg-[#FFFFFF] px-6 py-4 rounded-lg flex flex-col justify-end">
           <p className="font-space_grotesk flex items-center mb-4">
             <span className="font-bold text-4xl">4.9</span>
             <span className="text-sm">/5</span>
@@ -32,7 +32,7 @@ function Experience() {
 
         {experienceCards.map((item) => {
           return (
-            <div key={item.id} className={`flex gap-2 ${item.id !== 2  ? "flex-col" : "flex-col-reverse"} w-[25%]`} >
+            <div key={item.id} className={`flex gap-2 ${item.id !== 2  ? "flex-col" : "flex-col-reverse"} md:w-[25%] w-full`} >
               <div className="bg-card_bg gap-2 px-6 py-4 flex rounded-lg">
                 <Image
                   src={"/landing_page/avatar_experience.png"}

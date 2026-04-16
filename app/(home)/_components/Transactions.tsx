@@ -5,33 +5,33 @@ function Transaction() {
   return (
     <main className="bg-linear-to-b from-[#FDF4C2] to-light pt-12 min-h-dvh relative">
       <section className="flex h-full">
-        <div className="w-[25%] sm:ms-28 justify-between">
-          <h2 className="text-4xl font-space_grotesk leading-12 font-bold bg-linear-to-b from-[#000000] to-[#517184] bg-clip-text text-transparent">
+        <div className="md:w-[25%] md:ms-28 px-6 md:px-0 justify-between">
+          <h2 className="md:text-4xl text-3xl font-space_grotesk md:leading-12 font-bold bg-linear-to-b from-[#000000] to-[#517184] bg-clip-text text-transparent">
             Smart Crypto Transactions, Made Effortless
           </h2>
-          <div className="flex justify-between border my-12 w-[75%]">
+          <div className="flex justify-between gap-2 my-12 w-[75%]">
             <Link
               href={"#"}
-              className="transition-transform ease-in-out duration-100 hover:-translate-y-1"
+              className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
             >
               <Image
                 src={"/store_badges/playstore_badge.png"}
                 alt="Playstore Badge"
                 width={100}
                 height={100}
-                className="object-cover w-auto h-auto"
+                className="object-cover w-full h-auto"
               />
             </Link>
             <Link
               href={"#"}
-              className="transition-transform ease-in-out duration-100 hover:-translate-y-1"
+              className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
             >
               <Image
                 src={"/store_badges/app_store_badge.png"}
                 alt="App Store Badge"
                 width={100}
                 height={100}
-                className="object-cover w-auto h-auto"
+                className="object-cover w-full h-auto"
               />
             </Link>
           </div>
