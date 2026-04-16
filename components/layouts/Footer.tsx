@@ -1,6 +1,7 @@
 import { footerLinks } from "@/common/data/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { socialIcons } from "@/common/data/navigation";
 
 function Footer() {
   return (
@@ -17,7 +18,20 @@ function Footer() {
           <p className="max-w-xs my-2 text-sm text-low_blue">
             Take Your Crypto to the Next Level
           </p>
-          <div></div>
+          <div className="flex gap-2">
+            {socialIcons.map((item) => {
+              const Icon = item.icons;
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="p-2 rounded-full bg-[#222F37] transtion-transform ease-in duration-150 hover:scale-110"
+                >
+                  <Icon size={16} />
+                </Link>
+              );
+            })}
+          </div>
         </aside>
         {footerLinks.map((link) => {
           return (

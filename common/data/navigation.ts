@@ -1,3 +1,7 @@
+import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+import { SocialIcons } from "@/types/social";
+
 export const navLinks = [
   {
     id: 1,
@@ -75,7 +79,7 @@ export const footerLinks = [
       {
         name: "Help Center",
         to: "/help-center",
-      }
+      },
     ],
   },
 
@@ -98,7 +102,33 @@ export const footerLinks = [
       {
         name: "Investors",
         to: "/investors",
-      }
-    ]
-  }
+      },
+    ],
+  },
+];
+
+export const socialIcons: SocialIcons[] = [
+  {
+    name: "facebook",
+    href: "#",
+    icons: FaFacebookF,
+  },
+
+  {
+    name: "twitter",
+    href: "#",
+    icons: FaTwitter,
+  },
+
+  {
+    name: "Instagram",
+    href: "#",
+    icons: AiFillInstagram,
+  },
+
+  {
+    name: "LinkedIn",
+    href: "#",
+    icons: FaLinkedin,
+  },
 ];
