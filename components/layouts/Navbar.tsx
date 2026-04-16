@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { navLinks } from "@/common/data/navigation";
 import Link from "next/link";
 import Button from "../ui/Button";
+import { BiMenu } from "react-icons/bi";
 
 function Navbar() {
   const pathname = usePathname();
@@ -12,15 +13,13 @@ function Navbar() {
   return (
     <nav className="bg-dark">
       {/* first navbar section */}
-      <section className="flex items-center justify-between px-10 sm:px-28 py-4">
+      <section className="flex items-center justify-between px-6 sm:px-28 py-4">
         <div className="relative w-18 h-4 sm:w-24 sm:h-4 md:w-36 md:h-8">
           <Link href="/">
             {" "}
             <Image
               src="/logos/clicknswap_word_logo.png"
               alt="ClickNSwap Logo"
-              // fill
-              // sizes="(max-width: 640px) 10rem, (max-width: 1024px) 12rem, 14rem"
               className="object-contain w-auto h-auto"
               loading="eager"
               width={100}
@@ -41,7 +40,6 @@ function Navbar() {
             name="select_language"
             id="select_language"
             className="px-2 py-2 cursor-pointer"
-            // style={{ accentColor: "#748D9D" }}
           >
             <option
               value="en"
@@ -56,11 +54,15 @@ function Navbar() {
               FR
             </option>
           </select>
+
+          <div className="sm:hidden block">
+            <BiMenu size={24} />
+          </div>
         </div>
       </section>
 
       {/* second navbar section */}
-      <section className="flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary">
+      <section className="sm:flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary hidden">
         <div className="flex items-center gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.to;

@@ -22,7 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${space_grotesk.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${space_grotesk.variable}`}
+      suppressHydrationWarning
+    >
       <body className="font-inter">{children}</body>
     </html>
   );
