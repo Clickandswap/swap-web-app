@@ -82,7 +82,7 @@ function Navbar() {
       </section>
 
       {/* desktop nav */}
-      <section className="sm:flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary hidden">
+      <section className="md:flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary hidden">
         <div className="flex items-center gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.to;
@@ -132,27 +132,26 @@ function Navbar() {
             transition: { when: "afterChildren", duration: 0.35 },
           },
         }}
-        // Fix #1: use pointer-events + visibility instead of aria-hidden
         className={`absolute left-0 w-full md:hidden overflow-hidden bg-black/80 backdrop-blur ${
           openDropdown ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
         <div className="flex flex-col items-center justify-center py-4">
-          {navLinks.map((it) => (
+          {navLinks.map((item) => (
             <motion.div
-              key={it.id}
+              key={item.id}
               variants={{
                 open: { opacity: 1, y: 0 },
                 closed: { opacity: 0, y: -10 },
               }}
             >
               <Link
-                href={it.to}
+                href={item.to}
                 className={`block text-white py-2 text-lg transition-transform ease-in-out duration-300 hover:-translate-y-1`}
                 role="menuitem"
                 onClick={closeMenu}
               >
-                {it.name}
+                {item.name}
               </Link>
             </motion.div>
           ))}

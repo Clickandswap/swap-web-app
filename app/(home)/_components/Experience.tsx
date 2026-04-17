@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Experience() {
   return (
-    <main className="sm:px-28 px-6 py-16 bg-linear-to-b from-[#FFFFFF] to-[#FDF4C2] text-dark">
+    <main className="sm:px-28 px-6 py-16 bg-linear-to-b from-[#FFFFFF] to-gradient-light-primary text-dark">
       <div className="text-[#222F37] md:w-[35%]">
         <h2 className="font-space_grotesk md:text-4xl text-3xl font-bold">
           We deliver experience

@@ -4,7 +4,7 @@ import Image from "next/image";
 function MadeEasy() {
   return (
     <main className="sm:px-28 py-12">
-      <h2 className="font-bold md:text-5xl text-3xl bg-linear-to-r from-dark to-[#4A6879] bg-clip-text text-transparent text-center py-10 sm:px-28 px-6">
+      <h2 className="font-bold md:text-5xl text-3xl bg-linear-to-r from-dark to-gradient-dark-secondary bg-clip-text text-transparent text-center py-10 sm:px-28 px-6">
         Crypto Made Easy
       </h2>
 

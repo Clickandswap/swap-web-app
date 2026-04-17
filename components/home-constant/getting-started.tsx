@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function GettingStarted() {
   return (
-    <main className="bg-[#E4EDD9] text-[#222F37] flex md:flex-row flex-col justify-between pt-8">
+    <main className="bg-[#E4EDD9] text-steel-blue flex md:flex-row flex-col justify-between pt-8">
       <div className="md:w-[50%] w-full md:ps-28 ps-6 pe-6 md:pe-0 py-14 self-center">
         <h3 className="text-space_grotesk font-bold md:text-4xl text-2xl">
           Getting Started In Just Few Steps
@@ -37,7 +37,7 @@ function GettingStarted() {
           alt="ClickNSwap Dashboard"
           width={500}
           height={300}
-          className="md::object-contain object-cover w-full h-full"
+          className="md:object-contain object-cover w-full h-full"
           loading="eager"
         />
       </div>

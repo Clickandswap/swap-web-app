@@ -40,7 +40,7 @@ export const footerLinks = [
       },
       {
         name: "Developers",
-        to: "/developers",
+        to: "/developer",
       },
     ],
   },

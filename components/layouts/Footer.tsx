@@ -6,13 +6,13 @@ import { socialIcons } from "@/common/data/navigation";
 function Footer() {
   return (
     <main className="px-10 sm:px-28 pt-16 pb-6 bg-[url(/footer/footer_gradient_background.jpg)] bg-cover">
-      <footer className="footer sm:footer-horizontal">
+      <footer className="footer md:footer-horizontal">
         <aside>
           <Image
             src={"/logos/clicknswap_word_logo.png"}
             alt="ClickNSwap Logo"
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             className="w-auto h-8 object-cover"
           />
           <p className="max-w-xs my-2 text-sm text-low_blue">
@@ -25,7 +25,7 @@ function Footer() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="p-2 rounded-full bg-[#222F37] transtion-transform ease-in duration-150 hover:scale-110"
+                  className="p-2 rounded-full bg-steel-blue transtion-transform ease-in duration-150 hover:scale-110"
                 >
                   <Icon size={16} />
                 </Link>

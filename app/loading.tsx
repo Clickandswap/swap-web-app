@@ -11,8 +11,6 @@ function Loading() {
         className="w-auto h-auto object-contain animate-pulse"
         priority
       />
-
-      {/* <h1 className="text-5xl font-bold">Loading...</h1> */}
     </main>
   );
 }

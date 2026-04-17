@@ -11,12 +11,12 @@ function FirstToExperience() {
           Be First to Experience the Future of Crypto
         </h4>
 
-        <div className="w-full flex flex-col md:flex-row gap-6 my-6">
-          <Button className="bg-primary md:w-1/2 text-dark flex items-center justify-center gap-1.5">
+        <div className="w-full flex flex-col lg:flex-row gap-6 my-6">
+          <Button className="bg-primary lg:w-1/2 text-dark flex items-center justify-center gap-1.5">
             {" "}
             <IoLogoAppleAppstore /> <IoLogoGooglePlaystore /> Download App{" "}
           </Button>
-          <Button className="border border-dark text-dark md:w-1/2">
+          <Button className="border border-dark text-dark lg:w-1/2">
             Get Started
           </Button>
         </div>

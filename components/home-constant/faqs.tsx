@@ -1,5 +1,5 @@
 function Faqs() {
-  const text = [
+  const faqs = [
     {
       id: 1,
       question: "What is ClickNSwap?",
@@ -20,8 +20,8 @@ function Faqs() {
     },
   ];
   return (
-    <main className="sm:px-28 px-6 py-12 flex justify-between sm:flex-row flex-col text-[#222F37]">
-      <div className="sm:w-[35%] w-full">
+    <main className="md:px-28 px-6 py-12 flex justify-between md:flex-row flex-col text-steel-blue">
+      <div className="md:w-[35%] w-full">
         <h3 className="text-space_grotesk font-bold md:text-4xl text-2xl">
           Got Questions? We've Got Answers
         </h3>
@@ -31,8 +31,8 @@ function Faqs() {
         </p>
       </div>
 
-      <div className="sm:w-[55%] w-full">
-        {text.map((question) => {
+      <div className="md:w-[55%] w-full">
+        {faqs.map((question) => {
           return (
             <div
               key={question.id}

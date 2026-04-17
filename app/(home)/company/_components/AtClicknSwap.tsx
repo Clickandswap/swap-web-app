@@ -18,7 +18,7 @@ function AtClicknSwap() {
           return (
             <div
               key={item.id}
-              className={`${item.id === 1 ? "bg-[#FAFAFA]" : "bg-[#FFFAE9]"} flex md:flex-row flex-col-reverse items-center justify-between py-8 px-6 my-10`}
+              className={`${item.id === 1 ? "bg-card_bg" : "bg-[#FFFAE9]"} flex md:flex-row flex-col-reverse items-center justify-between py-8 px-6 my-10`}
             >
               <div className="md:w-[45%]">
                 <h4 className="font-space_grotesk font-bold text-3xl">

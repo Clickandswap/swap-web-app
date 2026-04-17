@@ -17,8 +17,8 @@ function Transaction() {
               <Image
                 src={"/store_badges/playstore_badge.png"}
                 alt="Playstore Badge"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className="object-cover w-full h-auto"
               />
             </Link>
@@ -29,8 +29,8 @@ function Transaction() {
               <Image
                 src={"/store_badges/app_store_badge.png"}
                 alt="App Store Badge"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className="object-cover w-full h-auto"
               />
             </Link>

@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function Solutions() {
   return (
-    <main className="sm:px-28 px-6 py-24 text-dark">
-      <h3 className="font-bold sm:text-4xl text-2xl font-space_grotesk sm:w-[65%] w-full">
+    <main className="md:px-28 px-6 py-24 text-dark">
+      <h3 className="font-bold sm:text-4xl text-2xl font-space_grotesk md:w-[65%] w-full">
         Unlock the future of finance for your business. All-round solutions
         powered by ClickNSwap
       </h3>
 
-      <p className="sm:text-base text-xs my-6 sm:w-[65%]">
+      <p className="sm:text-base text-xs my-6 md:w-[65%]">
         We believe that powerful technology should feel simple to use. That’s
         why every part of our platform is designed with clarity, speed, and
         usability at its core. We prioritize intuitive design, transparent
