@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function NeedHelp() {
   return (
-    <main className="md:mx-28 my-12 px-8 md:py-10 py-0 pt-20 bg-[url(/company_page/gradient_bg.png)] bg-cover text-light md::rounded-3xl sm:relative md:h-75">
+    <main className="md:mx-28 my-12 px-8 md:py-10 py-0 pt-20 bg-[url(/company_page/gradient_bg.png)] bg-cover text-light md:rounded-3xl sm:relative md:h-75">
       <div className="md:w-[40%] mb-4 md:mb-0">
         <h3 className="font-bold sm:text-4xl text-2xl font-space_grotesk">
           Need Help? Talk to us

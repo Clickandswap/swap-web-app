@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function About() {
   return (
-    <main className="bg-dark text-light sm:px-28 px-6 py-16 flex flex-col md::flex-row gap-12 justify-center items-center min-h-dvh">
+    <main className="bg-dark text-light sm:px-28 px-6 py-16 flex flex-col md:flex-row gap-12 justify-center items-center min-h-dvh">
       <div className="px-6 pt-1 bg-[#202020] h-fit w-fit">
         <Image
           src={"/company_page/crypto_coins.png"}
@@ -13,7 +13,7 @@ function About() {
         />
       </div>
 
-      <div className="md::w-[35%] w-full">
+      <div className="md:w-[35%] w-full">
         <h3 className="font-bold text-4xl ">About Us</h3>
         <p className="my-6 text-base">
           We are building a financial system that works for everyone,
@@ -22,7 +22,7 @@ function About() {
           should not be a privilege, but a standard.
         </p>
 
-        <p className="text-base">
+        <p className="sm:text-base text-sm">
           Our platform was created to remove the complexity and limitations of
           traditional financial systems, replacing them with a simpler, more
           transparent way to manage and move money. By combining the power of

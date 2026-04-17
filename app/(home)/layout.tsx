@@ -5,7 +5,7 @@ import FirstToExperience from "@/components/home-constant/first-to-experience";
 
 function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex flex-1 flex-col overflow-hidden">
+    <main className="flex flex-1 flex-col">
       <Navbar />
       <main className="flex-1 overflow-y-auto bg-background">
         {children}

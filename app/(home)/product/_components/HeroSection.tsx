@@ -25,7 +25,7 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="bg-[url(/product_page/grid_line.png)] h-full md:w-1/2 w-full md:px-0 px-6">
+      <div className="bg-[url(/product_page/grid_line.png)] h-full md:w-1/2 w-full md:px-0 px-6 md:block flex justify-center">
         <Image
           src={"/clicknswap_mockup/clicknswap_mockup_two.png"}
           alt="ClickNSwap Dashboard"
