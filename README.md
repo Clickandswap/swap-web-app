@@ -74,7 +74,7 @@ pm2 startup
 
 Best practice for production: use both.
 
-- Run this Next.js app with PM2 on `127.0.0.1:6000`.
+- Run this Next.js app with PM2 on `127.0.0.1:3005`.
 - Put Nginx in front on `80/443` for HTTPS and proxying.
 
 Example Nginx site block:
@@ -85,7 +85,7 @@ server {
 	server_name your-domain.com;
 
 	location / {
-		proxy_pass http://127.0.0.1:6000;
+		proxy_pass http://127.0.0.1:3005;
 		proxy_http_version 1.1;
 		proxy_set_header Upgrade $http_upgrade;
 		proxy_set_header Connection "upgrade";
