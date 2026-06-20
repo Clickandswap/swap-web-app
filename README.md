@@ -60,6 +60,13 @@ node .next/standalone/server.js
 
 (`next start` is not used for this deployment mode.)
 
+`npm run build` also runs a `postbuild` step that copies:
+
+- `.next/static` -> `.next/standalone/.next/static`
+- `public` -> `.next/standalone/public`
+
+These copies are required so JS chunks, images, and other static assets load correctly in standalone mode.
+
 3. Useful process commands:
 
 ```bash
@@ -67,6 +74,8 @@ npm run pm2:logs
 npm run pm2:restart
 npm run pm2:stop
 ```
+
+After code updates, run `npm run build` before `npm run pm2:restart`.
 
 4. Persist PM2 across reboots:
 
