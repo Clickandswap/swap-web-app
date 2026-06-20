@@ -52,6 +52,14 @@ npm run build
 npm run pm2:start
 ```
 
+This project uses `output: "standalone"`, so production runs with:
+
+```bash
+node .next/standalone/server.js
+```
+
+(`next start` is not used for this deployment mode.)
+
 3. Useful process commands:
 
 ```bash
