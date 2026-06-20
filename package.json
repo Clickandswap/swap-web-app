@@ -7,7 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "start:prod": "next start -H 0.0.0.0 -p 6000",
+    "pm2:start": "pm2 start ecosystem.config.cjs --env production",
+    "pm2:restart": "pm2 restart swap-web-app",
+    "pm2:stop": "pm2 stop swap-web-app",
+    "pm2:logs": "pm2 logs swap-web-app"
   },
   "dependencies": {
     "clsx": "^2.1.1",

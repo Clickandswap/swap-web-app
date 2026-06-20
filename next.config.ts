@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Produces a slimmer runtime bundle for self-hosted Node.js deployments.
+  output: "standalone",
 };
 
 export default nextConfig;
