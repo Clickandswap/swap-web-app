@@ -2,25 +2,25 @@ export const cardDetails = [
   {
     id: 1,
     img_path: "/gif/card_easy_to_use.gif",
-    title: "Easy to Use",
+    title: "Fast Settlements",
     details:
-      "Whether you’re a beginner or seasoned pro,Skip the complexity - ClickNSwap lets you buy, withdraw or swap crypto quickly with a clean, no-hassle experience.",
+      "Minutes, not days.Clear rates, no hidden fees.",
   },
 
   {
     id: 2,
     img_path: "/gif/card_fast_and_secure.gif",
-    title: "Fast and Secure",
+    title: "Safe and Secure",
     details:
-      "Your crypto, your control. Security at every stage.Uncompromising speed. Optimal performance, all the time.",
+      "Security at every  stage. Uncompromising speed. Optimal performance, all the time.",
   },
 
   {
     id: 3,
     img_path: "/gif/card_best_rate_always.gif",
-    title: "The best rate always",
+    title: "Transparent Pricing",
     details:
-      "Access the best rates from top-tier trusted liquidity partners and strong risk management.",
+      "The money they use every day.Built for the diaspora, Families and businesses.",
   },
 ];
 

@@ -16,7 +16,7 @@ function Footer() {
             className="w-auto h-8 object-cover"
           />
           <p className="max-w-xs my-2 text-sm text-low_blue">
-            Take Your Crypto to the Next Level
+            Move money beyond borders.
           </p>
           <div className="flex gap-2">
             {socialIcons.map((item) => {

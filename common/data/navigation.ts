@@ -5,17 +5,22 @@ import { SocialIcons } from "@/types/social";
 export const navLinks = [
   {
     id: 1,
+    name: "Business",
+    to: "/business",
+  },
+  {
+    id: 2,
     name: "Product",
     to: "/product",
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Company",
     to: "/company",
   },
   {
-    id: 3,
+    id: 4,
     name: "Developer",
     to: "/developer",
   },
