@@ -1,5 +1,8 @@
+import { productCard } from "@/common/data/card";
+import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { IoCheckmarkCircleOutline, IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 
 function Card() {
   return (
@@ -9,45 +12,34 @@ function Card() {
           Your Card, Your Way, Virtual or physical ⎯ it’s your choice
         </h3>
 
-        <p className="font-base my-4">
+        {/* <p className="font-base my-4">
           Turn your digital assets into everyday spending power - Pay online or
           in-store globally, Automatically convert crypto to fiat, Secure and
           easy-to-use virtual card, Track every transaction in-app.
-        </p>
+        </p> */}
 
-        <p className="font-bold text-base my-6">
-          From wallet to real world — instantly.
-        </p>
+        {productCard.map((item) => {
+          return (
+            <div key={item.id} className="flex gap-3 my-4">
+              <IoCheckmarkCircleOutline
+                className={`h-6 w-6 ${item.id === 2 && "h-8 w-8"}`}
+              />
+              <p className="font-medium text-sm">{item.details}</p>
+            </div>
+          );
+        })}
 
-        <div className="flex justify-between gap-3 my-12 w-[65%]">
-          <Link
-            href={"#"}
-            className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
-          >
-            <Image
-              src={"/store_badges/playstore_badge.png"}
-              alt="Playstore Badge"
-              width={100}
-              height={100}
-              className="object-cover w-full md:h-auto"
-            />
-          </Link>
-          <Link
-            href={"#"}
-            className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
-          >
-            <Image
-              src={"/store_badges/app_store_badge.png"}
-              alt="App Store Badge"
-              width={100}
-              height={100}
-              className="object-cover w-full md:h-auto"
-            />
-          </Link>
+        <div className="flex sm:flex-row flex-col justify-between gap-4 mt-6">
+          <Button className="bg-primary sm:w-1/2 w-full text-dark flex items-center justify-center gap-1.5 font-space_grotesk">
+            {" "}
+            <IoLogoAppleAppstore /> <IoLogoGooglePlaystore /> Coming Soon {" "}
+          </Button>
+          <Button className="sm:w-1/2 w-full font-space_grotesk text-light shadow-inner border border-primary">
+            Join the waitlist
+          </Button>
         </div>
       </div>
 
-      
       {/* lady holding card Image */}
       <Image
         src={"/product_page/lady_holding_card_two.png"}

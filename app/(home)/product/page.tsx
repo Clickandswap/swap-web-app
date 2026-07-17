@@ -3,6 +3,10 @@ import HeroSection from "./_components/HeroSection";
 import MadeEasy from "./_components/MadeEasy";
 import MadeSimple from "./_components/MadeSimple";
 import GettingStarted from "@/components/home-constant/getting-started";
+import Transactions from "../_components/Transactions";
+import Faqs from "@/components/home-constant/faqs";
+import FirstToExperience from "@/components/home-constant/first-to-experience";
+import WayToSave from "./_components/WayToSave";
 
 
 function ProductPage() {
@@ -11,8 +15,13 @@ function ProductPage() {
       <HeroSection />
       <MadeEasy />
       <Card />
-      <MadeSimple />
-      <GettingStarted />
+      <WayToSave />
+      <Transactions />
+      <Faqs />
+      <FirstToExperience />
+
+      {/* <MadeSimple /> */}
+      {/* <GettingStarted /> */}
     </>
   )
 }
