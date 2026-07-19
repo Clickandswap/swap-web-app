@@ -3,13 +3,13 @@ import Image from "next/image";
 function About() {
   return (
     <main className="bg-dark text-light sm:px-28 px-6 py-16 flex flex-col md:flex-row gap-12 justify-center items-center min-h-dvh">
-      <div className="px-6 pt-1 bg-[#202020] h-fit w-fit">
+      <div className="px-6 pt-1 bg-[#202020] h-dvh md:w-[35%]">
         <Image
-          src={"/company_page/crypto_coins.png"}
-          alt="Crypto's Coin"
+          src={"/company_page/about_us_img.png"}
+          alt="Company's Personels"
           width={300}
           height={150}
-          className="w-auto h-auto object-contain"
+          className="w-full h-full object-cover"
         />
       </div>
 
