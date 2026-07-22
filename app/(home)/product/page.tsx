@@ -11,7 +11,7 @@ import WayToSave from "./_components/WayToSave";
 
 function ProductPage() {
   return (
-    <>
+    <main className="overflow-hidden">
       <HeroSection />
       <MadeEasy />
       <Card />
@@ -22,7 +22,7 @@ function ProductPage() {
 
       {/* <MadeSimple /> */}
       {/* <GettingStarted /> */}
-    </>
+   </main>
   )
 }
 
