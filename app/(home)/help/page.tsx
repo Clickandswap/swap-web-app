@@ -5,12 +5,12 @@ import FindAnswers from './_components/FindAnswers';
 
 function HelpPage() {
   return (
-    <>
+    <main className='overflow-hidden'>
         <HeroSection />
         <FindAnswers />
         <NeedHelp />
         <Faqs />
-    </>
+    </main>
   )
 }
 
