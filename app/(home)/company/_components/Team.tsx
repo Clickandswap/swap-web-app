@@ -1,7 +1,10 @@
+"use client";
+
 import { teamMembers } from "@/common/data/team";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 function Team() {
   return (
@@ -10,9 +13,15 @@ function Team() {
         The Team building it
       </h2>
 
-      <div className="my-8 flex gap-3">
+      <div className="my-8 flex md:flex-row flex-col gap-3">
         {/* apply */}
-        <div className="bg-light p-4 w-[30%] flex items-center">
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-light p-4 md:w-[30%] flex items-center"
+        >
           <div className="">
             <div className="flex items-center gap-2">
               <div className="bg-[#517184] h-0.5 w-10" />
@@ -32,15 +41,22 @@ function Team() {
               APPLY NOW
             </Button>
           </div>
-        </div>
+        </motion.div>
 
-        
         {/* team members */}
-        <div className="flex gap-4 w-full">
-          {teamMembers.map((item) => (
-            <div
+        <div className="flex md:flex-row flex-col gap-4 w-full">
+          {teamMembers.map((item, index) => (
+            <motion.div
               key={item.id}
               className="relative w-full h-120 flex items-end overflow-hidden"
+              initial={{ opacity: 0, height: "20px" }} // Changed 10 to a valid string unit for width scales
+              whileInView={{ opacity: 1, height: "480px" }}
+              viewport={{ once: true }}
+              transition={{
+                delay: index * 0.6,
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
             >
               {/* Next.js Optimized Image handling fill & fit */}
               <Image
@@ -59,7 +75,7 @@ function Team() {
                 </h4>
                 <p className="text-sm text-neutral-700 mt-0.5">{item.name}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
