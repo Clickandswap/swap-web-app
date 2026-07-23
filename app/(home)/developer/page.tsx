@@ -9,13 +9,14 @@ import FirstToExperience from "@/components/home-constant/first-to-experience";
 
 function DeveloperPage() {
   return (
-    <>
+    <main className="overflow-hidden">
       <HeroSection />
       <Solutions />
       <ApiUsage />
       <Faqs />
       <FirstToExperience />
-    </>
+      </main>
+
   )
 }
 
