@@ -97,8 +97,8 @@ export const footerLinks = [
         to: "/about",
       },
       {
-        name: "Careers",
-        to: "/careers",
+        name: "Career",
+        to: "/career",
       },
       {
         name: "Partners",
