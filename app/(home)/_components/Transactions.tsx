@@ -1,39 +1,104 @@
+"use client";
+
+import { gettingStartedSteps } from "@/common/data/card";
+import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { FaApple } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
-function Transaction() {
+function Transactions() {
   return (
-    <main className="bg-linear-to-b from-[#FDF4C2] to-light pt-12 min-h-dvh relative">
-      <section className="flex h-full">
-        <div className="md:w-[25%] md:ms-28 px-6 md:px-0 justify-between">
-          <h2 className="md:text-4xl text-3xl font-space_grotesk md:leading-12 font-bold bg-linear-to-b from-[#000000] to-[#517184] bg-clip-text text-transparent">
-            Smart Crypto Transactions, Made Effortless
-          </h2>
-          <div className="flex justify-between gap-2 my-12 w-[75%]">
-            <Link
-              href={"#"}
-              className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
-            >
-              <Image
-                src={"/store_badges/playstore_badge.png"}
-                alt="Playstore Badge"
-                width={200}
-                height={200}
-                className="object-cover w-full h-auto"
-              />
-            </Link>
-            <Link
-              href={"#"}
-              className="transition-transform ease-in-out duration-100 hover:-translate-y-1 w-1/2"
-            >
-              <Image
-                src={"/store_badges/app_store_badge.png"}
-                alt="App Store Badge"
-                width={200}
-                height={200}
-                className="object-cover w-full h-auto"
-              />
-            </Link>
+    <main className="bg-linear-to-b from-[#FDF4C2] to-light pt-12 min-h-dvh relative md:pt-26">
+      <section className="flex md:flex-row flex-col-reverse h-full">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="h-full md:w-[60%]"
+        >
+          <Image
+            width={500}
+            height={1200}
+            alt="phone and debit card"
+            src={"/landing_page/phone_and_wood.png"}
+            className="object-cover h-full w-full"
+          />
+        </motion.div>
+
+        <div className="text-[#222F37] md:w-[40%] md:me-30 md:px-0 px-6">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="md:text-5xl text-2xl font-bold font-space_grotesk mb-6"
+          >
+            Getting Started in <br /> Just a Few Steps
+          </motion.h3>
+          <h4 className="">Up and running in a few steps</h4>
+
+          <div className="mt-8">
+            {gettingStartedSteps.map((item, index) => {
+              const isLast = index === gettingStartedSteps.length - 1;
+              return (
+                <div key={item.id} className="relative pb-10 last:pb-0">
+                  {/* Vertical Dashed Line connecting the dots */}
+                  {!isLast && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      whileInView={{ opacity: 1, height: "auto" }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.6, duration: 0.6 }}
+                      className="absolute top-7 left-2.25 bottom-0 w-[1.5px] border-l-2 border-secondary"
+                    />
+                  )}
+
+                  {/* Circular Dot Indicator */}
+                  <div className="absolute top-1.5 left-0 h-5 w-5 rounded-full bg-secondary" />
+
+                  <div className="pl-10">
+                    {item.id === 1 ? (
+                      <h2 className="font-space_grotesk md:text-3xl text-xl font-bold md:w-[90%] bg-linear-to-b from-dark to-[#517184] bg-clip-text text-transparent">
+                        {item.title}
+                      </h2>
+                    ) : (
+                      <h2 className="font-space_grotesk md:text-3xl text-xl font-bold">
+                        {item.title}
+                      </h2>
+                    )}
+                    <p className="my-2">{item.details}</p>
+
+                    {item.buttonPresent && (
+                      <div className="flex md:flex-row flex-col gap-6 items-center mt-5">
+                        <Button className="bg-dark text-light flex gap-2 items-center py-2 px-6 justify-center md:w-auto w-full">
+                          <Image
+                            width={200}
+                            height={200}
+                            src={"/store_badges/playstore_icon.png"}
+                            alt="Play Store Icon"
+                            className="w-5 h-5 object-contain"
+                          />
+
+                          <h4 className="font-space_grotesk font-medium text-lg">
+                            Play Store
+                          </h4>
+                        </Button>
+
+                        <Button className="bg-dark text-light flex gap-2 items-center py-2 px-6 justify-center md:w-auto w-full">
+                          <FaApple color="white" size={20} />
+
+                          <h4 className="font-space_grotesk font-medium text-lg">
+                            App Store
+                          </h4>
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -57,4 +122,4 @@ function Transaction() {
   );
 }
 
-export default Transaction;
+export default Transactions;
