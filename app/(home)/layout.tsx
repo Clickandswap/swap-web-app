@@ -10,7 +10,6 @@ function HomeLayout({ children }: { children: React.ReactNode }) {
       <main className="flex-1 overflow-y-auto bg-background">
         {children}
       </main>
-      <FirstToExperience />
       <Footer />
     </main>
   );

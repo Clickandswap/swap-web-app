@@ -6,18 +6,26 @@ import Transactions from "./_components/Transactions";
 import PortfolioSafely from "./_components/PortfolioSafely";
 import InternationalCard from "./_components/InternationalCard";
 import Experience from "./_components/Experience";
+import NeedHelp from "@/components/home-constant/NeedHelp";
+import WhatYouCanDo from "./_components/WhatYouCanDo";
+import RateCalculator from "./_components/RateCalculator";
+import FirstToExperience from "@/components/home-constant/first-to-experience";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <WhyClickNSwap />
+      <WhatYouCanDo />
+      <InternationalCard />
       <Transactions />
       <PortfolioSafely />
-      <InternationalCard />
-      <Experience />
-      <GettingStarted />
+      {/* <Experience /> */}
+      {/* <RateCalculator /> */}
+      {/* <GettingStarted /> */}
       <Faqs />
+      <FirstToExperience />
+      <NeedHelp />
     </>
   );
 }

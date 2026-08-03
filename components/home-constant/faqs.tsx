@@ -1,37 +1,52 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 function Faqs() {
   const faqs = [
     {
       id: 1,
-      question: "What is ClickNSwap?",
+      question: "What is Click and Swap?",
       answer:
-        "ClickNSwap is a decentralized exchange (DEX) built on the Ethereum blockchain. It allows users to swap ERC-20 tokens directly from their wallets without the need for an intermediary.",
+        "Click and Swap is a cross-border payments app. You can send, receive, exchange, and spend money across countries — funded by stablecoins and settled to local currency or your bank.",
     },
     {
       id: 2,
-      question: "How do I fund my wallet",
+      question: "How do I fund my account?",
       answer:
         "Fund your wallet by purchasing cryptocurrency from a reputable exchange and transferring it to your wallet address. You can also receive cryptocurrency from other users by sharing your wallet address.",
     },
     {
       id: 3,
-      question: "How do I fund with any currency?",
+      question: "What currencies and digital assets are supported?",
       answer:
         "To fund your wallet with any currency, you can use a cryptocurrency exchange that supports the currency you want to use. You can purchase the desired cryptocurrency on the exchange and then transfer it to your wallet address.",
     },
   ];
   return (
-    <main className="md:px-28 px-6 py-12 flex justify-between md:flex-row flex-col text-steel-blue">
-      <div className="md:w-[35%] w-full">
+    <main className="md:px-28 px-6 py-12 flex justify-between md:flex-row flex-col text-steel-blue overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{  duration: 0.6 }}
+        className="md:w-[35%] w-full"
+      >
         <h3 className="text-space_grotesk font-bold md:text-4xl text-2xl">
           Got Questions? We've Got Answers
         </h3>
         <p className="sm:text-base text-xs my-8">
-          We know you would have some questions. Here’s are some helpful tips on
-          frequently issues we’ve received over time.
+          We know you may have questions. Here are answers to the ones we get most often.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="md:w-[55%] w-full">
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.6, duration: 0.6 }}
+        className="md:w-[55%] w-full"
+      >
         {faqs.map((question) => {
           return (
             <div
@@ -48,7 +63,7 @@ function Faqs() {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </main>
   );
 }

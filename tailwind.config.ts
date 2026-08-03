@@ -16,7 +16,7 @@ const config: Config = {
         secondary: "#517184",
         accent: "#F59E0B",
         danger: "#EF4444",
-        dark: "#111111",
+        dark: "#010101",
         light: "#ffffff",
         card_bg: "#FAFAFA",
         "steel-blue": "#222F37",
