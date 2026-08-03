@@ -62,7 +62,7 @@ function Card() {
 
       {/* lady holding card Image */}
       <motion.div
-        className="md:absolute -bottom-65 right-20"
+        className="md:absolute bottom-0 right-20"
         initial={{ opacity: 0, scale: 0.4 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -76,7 +76,7 @@ function Card() {
         }}
       >
         <Image
-          src={"/product_page/lady_holding_card_two.png"}
+          src={"/product_page/lady_holding_card_two_updated.png"}
           alt="Card"
           width={700}
           height={300}

@@ -15,7 +15,7 @@ function ProductPage() {
       <HeroSection />
       <MadeEasy />
       <Card />
-      <WayToSave />
+      {/* <WayToSave /> */}
       <Transactions />
       <Faqs />
       <FirstToExperience />
