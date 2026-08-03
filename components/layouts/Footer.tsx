@@ -59,19 +59,20 @@ function Footer() {
       </footer>
 
       <div className="text-low_blue text-[13.67px] sm:w-[60%] my-20 mx-auto">
-        <p className="text-center w-full">
+        {/* <p className="text-center w-full">
           All material found on this website is shared for educational use and
           general insight into the features and products available through
           ClickNSwap.
-        </p>
+        </p> */}
 
         <p className="text-center my-4 w-full">
-          Our products and services can be accessed via the ClickNSwap App,
-          though availability may depend on your region and relevant legal or
-          regulatory conditions. We do our best to keep all information current
-          and reliable. However, we recommend conducting personal research and
-          considering your financial goals, level of knowledge, and risk
-          tolerance before making any investment choices.
+          <span className="font-bold">Disclaimer:</span> The information on this website is provided for general
+          information about Click and Swap’s products and services. Availability
+          may depend on your region and applicable legal or regulatory
+          requirements. While we strive to keep the information accurate and up
+          to date, features, pricing, and service availability may change
+          without notice. Please review the applicable Terms of Service and
+          other legal policies before using our services
         </p>
       </div>
 

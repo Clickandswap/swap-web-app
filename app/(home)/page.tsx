@@ -21,7 +21,7 @@ export default function Home() {
       <Transactions />
       <PortfolioSafely />
       {/* <Experience /> */}
-      <RateCalculator />
+      {/* <RateCalculator /> */}
       {/* <GettingStarted /> */}
       <Faqs />
       <FirstToExperience />

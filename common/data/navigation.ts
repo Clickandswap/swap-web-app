@@ -6,7 +6,7 @@ export const navLinks = [
   {
     id: 1,
     name: "Business",
-    to: "/business",
+    to: "/waitlist",
   },
   {
     id: 2,

@@ -157,7 +157,7 @@ export const gettingStartedSteps = [
   {
     id: 1,
     buttonPresent: true,
-    title: "Download the ClickandSwap app and sign up",
+    title: "Download the Click and Swap app and sign up",
     details:
       "Download the app on Android or iOS, sign up, and verify your identity.",
   },

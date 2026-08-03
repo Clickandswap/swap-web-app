@@ -70,10 +70,10 @@ function Team() {
 
               {/* Text overlay box positioned cleanly over the image */}
               <div className="relative z-10 bg-[#FFEEB0] w-[90%] text-neutral-900 py-4 px-4 shadow-lg">
-                <h4 className="font-semibold text-lg leading-tight">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-neutral-700 mt-0.5">{item.name}</p>
+                <h4 className="text-neutral-700 text-sm ">{item.title}</h4>
+                <p className="  mt-0.5 text-lg leading-tight font-semibold">
+                  {item.name}
+                </p>
               </div>
             </motion.div>
           ))}
