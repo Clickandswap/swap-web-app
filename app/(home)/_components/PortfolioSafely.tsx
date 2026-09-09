@@ -17,11 +17,11 @@ function PortfolioSafely() {
         Everything you need to build your portfolio safely
       </motion.h2>
 
-      <div className="flex flex-col md:flex-row justify-between my-10 gap-6">
+      <div className="flex flex-col lg:flex-row justify-between my-10 gap-6">
         {portfolioCard.map((item, index) => {
           return (
             <motion.div
-              className={`card md:w-[50%] w-full ${item.id === 1 ? "bg-[#FFFCF1]" : "bg-[#FCFFF9]"}`}
+              className={`card lg:w-[50%] w-full ${item.id === 1 ? "bg-[#FFFCF1]" : "bg-[#FCFFF9]"}`}
               key={item.id}
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -32,10 +32,10 @@ function PortfolioSafely() {
                 <Image
                   src={item.img_path}
                   alt={item.title}
-                  width={200}
-                  height={100}
+                  width={400}
+                  height={400}
                   loading="lazy"
-                  className="w-auto h-auto object-contain my-12"
+                  className="w-full h-30 object-contain my-12"
                 />
               </figure>
               <div className="card-body">
@@ -54,15 +54,15 @@ function PortfolioSafely() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="bg-[#EEF9FF] py-12 rounded-xl md:h-110 h-150 flex md:flex-row flex-col items-end relative overflow-hidden"
+        className="bg-[#EEF9FF] py-12 rounded-xl lg:h-110 h-150 flex lg:flex-row flex-col items-end relative overflow-hidden"
       >
-        <div className="md:w-[50%] w-full px-5">
+        <div className="lg:w-[40%] w-full px-5 my-auto lg:ms-10 ">
           <h2 className="font-bold text-3xl font-space_grotesk">
-            Withdraw Crypto or Fiat ClickNSwap User for Free.
+            Send to any Click and Swap user for free
           </h2>
           <p className="font-medium md:text-lg text-sm my-4">
-            Enjoy zero withdrawal fees when sending crypto or fiat to other
-            users via their ClickNSwap ID or username—instant and secure.
+            Zero fees when you send to another Click and Swap user via their ID
+            or username — instant and secure
           </p>
         </div>
 
@@ -71,7 +71,7 @@ function PortfolioSafely() {
           alt="ClickNSwap Mockup"
           width={2500}
           height={2000}
-          className="w-auto h-auto md:object-contain absolute md:-right-110 md:-bottom-94 bottom-0 right-0"
+          className="lg:w-auto lg:h-auto w-full lg:object-contain lg:absolute lg:-right-70 lg:-bottom-80 bottom-0 right-0"
           loading="lazy"
         />
       </motion.div>

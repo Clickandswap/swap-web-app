@@ -16,7 +16,7 @@ function HeroSection() {
           transition={{ duration: 0.6 }}
           className="bg-[#FEF0BD] py-2 px-5 w-fit mx-auto text-xs font-medium rounded-3xl"
         >
-          ClickNSwap For Developers
+          ClickAndSwap For Developers
         </motion.p>
         <motion.h2
           initial={{ opacity: 0 }}
@@ -45,7 +45,7 @@ function HeroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1.5, duration: 0.6 }}
-          className="flex sm:flex-row flex-col justify-between gap-4 my-6 md:w-1/2 md:mx-auto"
+          className="flex sm:flex-row flex-col justify-between gap-4 my-6 lg:w-1/2 lg:mx-auto"
         >
           <Button className="bg-primary sm:w-1/2 w-full text-dark flex items-center justify-center gap-1.5 font-space_grotesk">
             {" "}

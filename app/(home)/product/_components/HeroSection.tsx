@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <main className="bg-light flex md:flex-row flex-col md:h-dvh h-205 overflow-hidden relative items-center">
-      <div className="md:w-[50%] w-full md:px-28 px-6 py-12 text-dark">
+    <main className="bg-light flex lg:flex-row flex-col lg:h-dvh h-205 overflow-hidden relative items-center">
+      <div className="lg:w-[50%] w-full md:px-28 px-6 py-12 text-dark">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -60,14 +60,14 @@ function HeroSection() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="bg-[url(/product_page/crypto_card_bg.png)] h-full md:w-1/2 w-full md:px-0 px-6 md:block flex justify-center"
+        className="bg-[url(/product_page/crypto_card_bg.png)] h-full lg:w-1/2 w-full lg:px-0 px-6 lg:block flex justify-center"
       >
         <Image
           src={"/clicknswap_mockup/clicknswap_mockup_two.png"}
           alt="ClickNSwap Dashboard MockUp"
           width={300}
           height={200}
-          className="md:w-auto md:h-auto w-fit h-fit object-contain md:absolute right-30 -bottom-115"
+          className="lg:w-auto lg:h-auto w-fit h-fit object-contain lg:absolute right-30 -bottom-115"
           loading="eager"
         />
       </motion.div>

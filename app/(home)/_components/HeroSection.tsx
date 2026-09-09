@@ -7,8 +7,8 @@ import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 
 function HeroSection() {
   return (
-    <main className="text-light bg-dark md:pt-28 pt-10 md:pb-24 pb-8  h-max flex flex-col md:flex-row justify-between">
-      <div className="md:px-28 px-6 md:w-[60%] md:mx-auto">
+    <main className="text-light bg-dark md:pt-28 pt-10 md:pb-24 pb-8  h-max flex flex-col lg:flex-row justify-between">
+      <div className="md:px-28 px-6 lg:w-[60%] md:mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -32,7 +32,7 @@ function HeroSection() {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="font-bold md:text-5xl text-3xl md:text-start text-center font-space_grotesk"
         >
-          Send, receive, exchange, and spend money across borders.
+          Send, receive, <br /> exchange, and spend <br /> money across borders.
         </motion.h2>
         <motion.h4
           initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ function HeroSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="w-[40%] md:mt-0 mt-10 md:px-12 px-4 md:self-auto self-center"
+        className="w-[40%] lg:mt-0 mt-10 lg:px-12 px-4 lg:self-auto self-center"
       >
         {/* <Image
           src={"/landing_page/big_slope_home.png"}
@@ -89,6 +89,14 @@ function HeroSection() {
               type="video/mp4"
             />
           </video>
+
+          <Image 
+          src={'/landing_page/user_profile_rotate_content.png'}
+          alt="User Profile"
+          width={500}
+          height={500}
+          className="absolute inset-0 h-full w-full object-contain"
+          />
         </div>
       </motion.div>
     </main>

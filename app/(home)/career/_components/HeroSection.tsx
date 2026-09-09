@@ -13,7 +13,7 @@ function HeroSection() {
         transition={{ duration: 0.6 }}
         className="bg-[#FEF0BD] py-2 px-5 w-fit text-xs font-medium rounded-3xl"
       >
-        ClickNSwap Career
+        ClickAndSwap Career
       </motion.p>
 
       <motion.h4

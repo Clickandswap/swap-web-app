@@ -13,8 +13,8 @@ import { motion } from "framer-motion";
 
 function Card() {
   return (
-    <main className="bg-dark text-light md:h-188 relative sm:px-28 px-6 md:py-18 pt-18 overflow-hidden">
-      <div className="md:w-[35%] w-full">
+    <main className="bg-dark text-light lg:h-188 relative sm:px-28 px-6 lg:py-18 pt-18 overflow-hidden">
+      <div className="lg:w-[35%] w-full">
         <motion.h3
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -62,7 +62,7 @@ function Card() {
 
       {/* lady holding card Image */}
       <motion.div
-        className="md:absolute bottom-0 right-20"
+        className="lg:absolute bottom-0 right-20"
         initial={{ opacity: 0, scale: 0.4 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -80,7 +80,7 @@ function Card() {
           alt="Card"
           width={700}
           height={300}
-          className="md:w-auto md:h-auto w-full md:object-cover object-contain"
+          className="lg:w-auto lg:h-auto w-full md:object-cover object-contain"
         />
       </motion.div>
 

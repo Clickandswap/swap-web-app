@@ -71,13 +71,13 @@ function ApiUsage() {
       </div>
 
       {/* second section */}
-      <div className="flex md:flex-row flex-col gap-6 md:h-70 my-4">
+      <div className="flex lg:flex-row flex-col gap-6 lg:h-70 my-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.75, duration: 0.6 }}
-          className="bg-light p-6 rounded-xl relative md:w-[60%] flex flex-col justify-between md:h-full h-90"
+          className="bg-light p-6 rounded-xl relative lg:w-[60%] flex flex-col justify-between md:h-full h-90"
         >
           <div className="">
             <h4 className="text-2xl font-semibold font-space_grotesk">
@@ -111,7 +111,7 @@ function ApiUsage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.9, duration: 0.6 }}
-          className="bg-light p-6 rounded-xl md:w-[40%] flex flex-col justify-between md:h-full h-70"
+          className="bg-light p-6 rounded-xl lg:w-[40%] flex flex-col justify-between lg:h-full h-70"
         >
           <div className="">
             <h4 className="text-2xl font-semibold font-space_grotesk">

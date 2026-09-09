@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <main className="md:py-20 py-10 md:px-52 px-6 text-dark bg-linear-to-r from-[#EFF6FF] to-[#FFFEF9]">
+    <main className="md:py-20 py-10 lg:px-52 px-6 text-dark bg-linear-to-r from-[#EFF6FF] to-[#FFFEF9]">
       <motion.p
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -13,7 +13,7 @@ function HeroSection() {
         transition={{ duration: 0.6 }}
         className="bg-[#FEF0BD] py-2 px-5 w-fit text-xs font-medium rounded-3xl"
       >
-        ClickNSwap Security
+        ClickAndSwap Security
       </motion.p>
 
       <motion.h4
@@ -45,10 +45,10 @@ function HeroSection() {
         className="w-full border mt-8"
       >
         <Image
-          src={"/logos/clickNswap_gradient.png"}
+          src={"/logos/bg_gradient_logo.png"}
           width={600}
           height={600}
-          alt="ClickNSwap Gradient Logo"
+          alt="ClickAndSwap Gradient Logo"
           className="object-cover h-full w-full"
           loading="eager"
         />

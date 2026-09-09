@@ -24,13 +24,13 @@ function Faqs() {
     },
   ];
   return (
-    <main className="md:px-28 px-6 py-12 flex justify-between md:flex-row flex-col text-steel-blue overflow-hidden">
+    <main className="md:px-28 px-6 py-12 flex justify-between lg:flex-row flex-col text-steel-blue overflow-hidden">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{  duration: 0.6 }}
-        className="md:w-[35%] w-full"
+        className="lg:w-[35%] w-full"
       >
         <h3 className="text-space_grotesk font-bold md:text-4xl text-2xl">
           Got Questions? We've Got Answers
@@ -45,7 +45,7 @@ function Faqs() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.6, duration: 0.6 }}
-        className="md:w-[55%] w-full"
+        className="lg:w-[55%] w-full"
       >
         {faqs.map((question) => {
           return (

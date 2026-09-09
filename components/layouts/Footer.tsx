@@ -6,10 +6,10 @@ import { socialIcons } from "@/common/data/navigation";
 function Footer() {
   return (
     <main className="px-10 sm:px-28 pt-16 pb-6 bg-[url(/footer/footer_gradient_background.jpg)] bg-cover">
-      <footer className="footer md:footer-horizontal">
+      <footer className="footer lg:footer-horizontal">
         <aside>
           <Image
-            src={"/logos/clicknswap_word_logo.png"}
+            src={"/logos/ClickAndSwap_word_logo.png"}
             alt="ClickNSwap Logo"
             width={200}
             height={200}
@@ -78,10 +78,10 @@ function Footer() {
 
       <div>
         <Image
-          src={"/logos/ClickNSwap.png"}
+          src={"/logos/ClickAndSwap_word_only.png"}
           width={400}
           height={300}
-          alt="ClickNSwap Big"
+          alt="ClickNSwap Word Only Logo"
           className="object-contain w-full"
         />
 

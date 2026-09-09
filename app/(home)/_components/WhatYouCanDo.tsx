@@ -30,26 +30,26 @@ function WhatYouCanDo() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="text-base text-dark my-3"
+        className="text-base text-dark my-3 md:w-[50%] md:text-start"
       >
         Move money the way the moment needs — across borders, into local
         currency, or onto a card.
       </motion.p>
 
-      <div className="flex md:flex-row flex-col gap-6">
-        <div className="md:w-[70%]">
+      <div className="flex lg:flex-row flex-col gap-6">
+        <div className="lg:w-[70%]">
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 1.5, duration: 0.6 }}
-            className="md:bg-[url(/landing_page/bg_gradient_dark_to_light.png)] bg-dark/80 h-60 overflow-hidden bg-cover relative flex rounded-xl p-6 w-full"
+            className="md:bg-[url(/landing_page/bg_gradient_dark_to_light.png)] bg-dark/90 md:bg-transparent h-60 overflow-hidden bg-cover relative flex rounded-xl p-6 w-full"
           >
-            <div className="w-1/2">
-              <h4 className="font-semibold text-2xl mb-4 font-space_grotesk">
+            <div className="md:w-1/2 z-20 md:block flex flex-col justify-end">
+              <h4 className="font-semibold text-2xl mb-4 font-space_grotesk text-light">
                 Send and Receive
               </h4>
-              <p className="text-sm font-light">
+              <p className="text-sm font-light text-light">
                 Transfer money internationally in a few taps. Get paid in your
                 local currency, straight to your account.
               </p>
@@ -123,7 +123,7 @@ function WhatYouCanDo() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 3, duration: 0.6 }}
-          className="md:w-[30%] md:mt-0 mt-10  md:h-auto h-87.5"
+          className="lg:w-[30%] md:mt-0 mt-10  lg:h-auto h-87.5"
         >
           <div className="relative w-full rounded-2xl h-full">
             <video
@@ -137,7 +137,7 @@ function WhatYouCanDo() {
             </video>
 
             {/* overlay */}
-            <div className="absolute inset-0 h-full w-full rounded-xl bg-dark/60 p-5">
+            <div className="absolute inset-0 h-full w-full rounded-xl bg-dark/60 p-5 text-light">
               <h4 className="font-medium text-xl font-space_grotesk mb-4">
                 Business
               </h4>

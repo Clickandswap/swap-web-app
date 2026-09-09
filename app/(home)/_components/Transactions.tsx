@@ -10,13 +10,13 @@ import { motion } from "framer-motion";
 function Transactions() {
   return (
     <main className="bg-linear-to-b from-[#FDF4C2] to-light pt-12 min-h-dvh relative md:pt-26">
-      <section className="flex md:flex-row flex-col-reverse h-full">
+      <section className="flex lg:flex-row flex-col-reverse h-full">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="h-full md:w-[60%]"
+          className="h-full lg:w-[60%]"
         >
           <Image
             width={500}
@@ -27,7 +27,7 @@ function Transactions() {
           />
         </motion.div>
 
-        <div className="text-[#222F37] md:w-[40%] md:me-30 md:px-0 px-6">
+        <div className="text-[#222F37] lg:w-[40%] lg:me-30 lg:px-0 px-6">
           <motion.h3
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
