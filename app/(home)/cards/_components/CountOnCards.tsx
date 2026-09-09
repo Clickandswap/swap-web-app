@@ -21,7 +21,7 @@ function CountOnCards() {
         currency, or onto a card.
       </p>
 
-      <div className="my-4 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(280px,auto)]">
+      <div className="my-4 grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-[minmax(280px,auto)]">
         {/* card 1 */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -69,7 +69,7 @@ function CountOnCards() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="md:row-span-2 rounded-lg flex flex-col justify-between overflow-hidden relative min-h-125"
+          className="lg:row-span-2 rounded-lg flex flex-col justify-between overflow-hidden relative min-h-125"
         >
           <div className="relative w-full rounded-2xl h-full">
             <Image
@@ -82,7 +82,7 @@ function CountOnCards() {
 
             {/* overlay */}
             <div className="absolute inset-0 h-full w-full rounded-xl bg-linear-to-b from-[#050505AB] to-dark/10 text-light p-6">
-              <h4 className="font-medium text-xl font-space_grotesk mb-4">
+              <h4 className="font-medium text-xl font-space_grotesk mb-4 text-light">
                 You are in full control
               </h4>
               <p className="font-light text-sm">
@@ -99,7 +99,7 @@ function CountOnCards() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="flex justify-between bg-radial from-[#FAFAFA] to-[#FFFCF1] rounded-lg p-6 md:col-span-2 flex-col md:flex-row items-start md:items-center overflow-hidden gap-6"
+          className="flex justify-between bg-radial from-[#FAFAFA] to-[#FFFCF1] rounded-lg p-6 lg:col-span-2 flex-col lg:flex-row items-start lg:items-center overflow-hidden gap-6"
         >
           <div>
             <h4 className="font-medium mb-4 mt-5 text-lg font-space_grotesk">

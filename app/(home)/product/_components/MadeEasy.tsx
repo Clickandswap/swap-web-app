@@ -15,13 +15,13 @@ function MadeEasy() {
       <div className="text-dark">
         {madeEasyCard.map((item, index) => {
           return (
-            <div key={item.id} className="flex md:flex-row flex-col my-5">
+            <div key={item.id} className="flex lg:flex-row flex-col my-5">
               <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className={`${item.id === 1 && "bg-[#EEF9FF]"} ${item.id === 2 && "bg-[#FAFAFA]"} ${item.id === 3 && "bg-[#FFFCF1]"} md:w-1/2 w-full p-20 md:pt-32 flex items-center`}
+                className={`${item.id === 1 && "bg-[#EEF9FF]"} ${item.id === 2 && "bg-[#FAFAFA]"} ${item.id === 3 && "bg-[#FFFCF1]"} lg:w-1/2 w-full p-20 lg:pt-32 flex items-center`}
               >
                 <div>
                   <h3 className="font-bold font-space_grotesk text-2xl">
@@ -47,7 +47,7 @@ function MadeEasy() {
                   mass: 0.8,
                   type: "spring",
                 }}
-                className="md:w-1/2 w-full p-12 relative bg-no-repeat bg-cover bg-center flex items-center justify-center md:h-auto h-100"
+                className="lg:w-1/2 w-full p-12 relative bg-no-repeat bg-cover bg-center flex items-center justify-center lg:h-auto h-100"
                 style={{ backgroundImage: `url(${item.img_bg})` }}
               >
                 {item.id === 1 && (
@@ -55,7 +55,7 @@ function MadeEasy() {
                     src={item.img_path}
                     width={400}
                     height={400}
-                    className="w-fit h-fit object-contain md:absolute bottom-10"
+                    className="w-fit h-fit object-contain lg:absolute bottom-10"
                     alt={`${item.name} Sample Image`}
                   />
                 )}
@@ -65,7 +65,7 @@ function MadeEasy() {
                     src={item.img_path}
                     width={200}
                     height={200}
-                    className="w-fit h-fit object-contain md:absolute -left-28 bottom-10"
+                    className="w-fit h-fit object-contain lg:absolute -left-28 bottom-10"
                     alt={`${item.name} Sample Image`}
                   />
                 )}

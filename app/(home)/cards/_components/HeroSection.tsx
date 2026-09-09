@@ -44,7 +44,7 @@ function HeroSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 1.6, duration: 0.6 }}
-        className="flex sm:flex-row flex-col justify-between gap-4 my-6 md:w-[40%] md:mx-auto"
+        className="flex sm:flex-row flex-col justify-between gap-4 my-6 md:w-[50%] md:mx-auto"
       >
         <Button className="bg-primary sm:w-1/2 w-full text-dark flex items-center justify-center gap-1.5 font-space_grotesk">
           {" "}
@@ -65,7 +65,7 @@ function HeroSection() {
         <Image
           width={500}
           height={500}
-          src={"/cards/cards.png"}
+          src={"/cards/cards_updated.png"}
           alt="Cards"
           className="w-auto h-auto object-cover"
           loading="eager"

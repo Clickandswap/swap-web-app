@@ -7,7 +7,7 @@ function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
     <main className="flex flex-1 flex-col">
       <Navbar />
-      <main className="flex-1 overflow-y-auto bg-background">
+      <main className="flex-1 bg-background overflow-hidden">
         {children}
       </main>
       <Footer />

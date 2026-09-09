@@ -13,14 +13,14 @@ function Team() {
         The Team building it
       </h2>
 
-      <div className="my-8 flex md:flex-row flex-col gap-3">
+      <div className="my-8 flex lg:flex-row flex-col gap-3">
         {/* apply */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-light p-4 md:w-[30%] flex items-center"
+          className="bg-light p-4 lg:w-[30%] flex items-center"
         >
           <div className="">
             <div className="flex items-center gap-2">

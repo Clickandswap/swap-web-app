@@ -14,7 +14,7 @@ function AtClicknSwap() {
         transition={{ duration: 0.6 }}
         className="font-space_grotesk font-bold md:text-5xl text-2xl"
       >
-        At ClickNSwap
+        At ClickAndSwap
       </motion.h3>
       <motion.p
         initial={{ opacity: 0, x: 30 }}

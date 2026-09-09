@@ -12,10 +12,10 @@ function Solutions() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="font-bold sm:text-4xl text-2xl font-space_grotesk md:w-[65%] w-full"
+        className="font-bold sm:text-4xl text-2xl font-space_grotesk lg:w-[65%] w-full"
       >
         Unlock the future of finance for your business. All-round solutions
-        powered by ClickNSwap
+        powered by ClickAndSwap
       </motion.h3>
 
       <motion.p
@@ -23,7 +23,7 @@ function Solutions() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="sm:text-base text-xs my-6 md:w-[65%]"
+        className="sm:text-base text-xs my-6 lg:w-[65%]"
       >
         We believe that powerful technology should feel simple to use. That’s
         why every part of our platform is designed with clarity, speed, and

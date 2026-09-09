@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 function NeedHelp() {
   return (
-    <main className="px-8 md:py-14 md:px-36 py-0 pt-20 bg-[#F6F6F6] bg-cover text-dark sm:relative md:h-85">
-      <div className="md:w-[40%] mb-4 md:mb-0">
+    <main className="px-8 md:py-14 md:px-36 py-0 pt-20 bg-[#F6F6F6] bg-cover text-dark sm:relative lg:h-85">
+      <div className="lg:w-[40%] mb-4 lg:mb-0">
         <h3 className="font-bold sm:text-4xl text-2xl font-space_grotesk">
           Need Help? Talk to us
         </h3>
@@ -26,13 +26,13 @@ function NeedHelp() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-      className="md:absolute right-30 bottom-0 md:h-95 h-105">
+      className="lg:absolute right-30 bottom-0 lg:h-95 h-105">
         <Image
         src={"/landing_page/lady_thumbs_up.jpg"}
         alt="Need Help? Image"
         width={200}
         height={200}
-        className="md:w-auto w-full md:h-auto h-full object-contain shadow-2xl"
+        className="lg:w-auto w-full lg:h-auto h-full object-contain shadow-2xl"
         loading="lazy"
       />
       </motion.div>

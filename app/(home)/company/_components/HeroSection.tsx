@@ -22,7 +22,7 @@ function HeroSection() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="font-semibold md:leading-12 md:text-4xl text-2xl md:w-[40%] mx-auto font-space_grotesk text-center mt-4"
       >
-        ClickNSwap is building the future of trust in digital transactions.
+        Building the future of cross-border payments.
       </motion.h2>
 
       <motion.div

@@ -26,7 +26,7 @@ function Navbar() {
         <div>
           <Link href="/">
             <Image
-              src="/logos/clicknswap_word_logo.png"
+              src="/logos/ClickAndSwap_word_logo.png"
               alt="ClickNSwap Logo"
               className="object-contain w-auto h-auto"
               loading="eager"
@@ -59,7 +59,7 @@ function Navbar() {
 
 
           {/* mobile menu icon */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               onClick={() => setOpenDropdown(!openDropdown)}
               aria-expanded={openDropdown}
@@ -82,7 +82,7 @@ function Navbar() {
       </section>
 
       {/* desktop nav */}
-      <section className="md:flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary hidden">
+      <section className="lg:flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary hidden">
         <div className="flex items-center gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.to;
@@ -132,7 +132,7 @@ function Navbar() {
             transition: { when: "afterChildren", duration: 0.35 },
           },
         }}
-        className={`absolute left-0 w-full md:hidden overflow-hidden bg-black/80 backdrop-blur ${
+        className={`absolute left-0 w-full lg:hidden overflow-hidden bg-black/80 backdrop-blur ${
           openDropdown ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >

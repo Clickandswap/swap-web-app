@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 function WhyClickNSwap() {
   return (
     <main className="md:px-28 px-6 pt-16 pb-4">
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-        <div className="md:w-[40%] ">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-4 lg:gap-0">
+        <div className="lg:w-[40%] ">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -33,7 +33,7 @@ function WhyClickNSwap() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 1.5, duration: 0.6 }}
-          className="text-base text-dark md:w-[40%] md:text-end"
+          className="text-base text-dark lg:w-[30%] lg:text-end"
         >
           For millions, sending money home still means high fees and long waits.
           We make it faster, fairer, and easier to trust.
@@ -42,11 +42,11 @@ function WhyClickNSwap() {
 
       {/* cards */}
 
-      <div className="flex flex-col md:flex-row justify-between gap-6 mt-20">
+      <div className="flex flex-col md:flex-row md:grid grid-cols-2 lg:flex justify-between gap-6 mt-20">
         {cardDetails.map((item, index) => {
           return (
             <motion.div
-              className="card bg-card_bg text-dark font-space_grotesk md:w-[45%] w-full"
+              className="card bg-card_bg text-dark font-space_grotesk lg:w-[45%] w-full"
               key={item.id}
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +66,7 @@ function WhyClickNSwap() {
               </figure>
               <div className="card-body">
                 <h2 className="card-title font-bold text-2xl">{item.title}</h2>
-                <p className="md:text-base text-sm">{item.details}</p>
+                <p className="md:text-base text-sm md:w-[80%]">{item.details}</p>
               </div>
             </motion.div>
           );
