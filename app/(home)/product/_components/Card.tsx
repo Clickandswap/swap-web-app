@@ -76,7 +76,7 @@ function Card() {
         }}
       >
         <Image
-          src={"/product_page/lady_holding_card_two_updated.png"}
+          src={"/product_page/lady_holding_card_two_updated_two.webp"}
           alt="Card"
           width={700}
           height={300}
