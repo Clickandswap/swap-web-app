@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { SocialIcons } from "@/types/social";
+import { FaTiktok, FaYoutube } from "react-icons/fa";
 
 export const navLinks = [
   {
@@ -115,25 +116,35 @@ export const footerLinks = [
 export const socialIcons: SocialIcons[] = [
   {
     name: "facebook",
-    href: "#",
+    href: "https://www.facebook.com/share/1Gxbxj5D4d/?mibextid=wwXIfr",
     icons: FaFacebookF,
   },
 
   {
     name: "twitter",
-    href: "#",
+    href: "https://x.com/clickandswap_?s=11",
     icons: FaTwitter,
   },
 
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/clickandswap_?stkn=MWJsM2wxZjhqY3V4aA%3D%3D&utm_source=qr",
     icons: AiFillInstagram,
   },
 
   {
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/company/click-and-swap/",
     icons: FaLinkedin,
   },
+  {
+    name: "YouTube",
+    href: "https://youtube.com/@clickandswap?si=wA_mTUauJuq1tb0-",
+    icons: FaYoutube,
+  },
+  {
+    name: "Tik Tok",
+    href: "https://www.tiktok.com/@clickandswap?_r=1&_t=ZT-99c39wxumFy",
+    icons: FaTiktok,
+  }
 ];

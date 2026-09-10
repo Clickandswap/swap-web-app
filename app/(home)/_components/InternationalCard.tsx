@@ -76,7 +76,7 @@ function InternationalCard() {
         className="bg-[url(/logos/logo_big.png)] bg-contain lg:h-full h-100 lg:w-[65%] w-full bg-no-repeat bg-right"
       >
         <Image
-          src={"/landing_page/lady_holding_card_updated.png"}
+          src={"/landing_page/lady_holding_card_updated.webp"}
           alt="International card"
           width={1200}
           height={500}
