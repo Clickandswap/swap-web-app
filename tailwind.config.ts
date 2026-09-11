@@ -9,7 +9,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-        colors: {
+      animation: {
+        // Change '20s' to make it faster or slower
+        marquee: "marquee 20s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" }, // Resets perfectly halfway through the duplicated items
+        },
+      },
+      colors: {
         primary: "#fccd29",
         foundation_blue: "#748D9D",
         low_blue: "#AFBEC6",
@@ -21,7 +31,7 @@ const config: Config = {
         card_bg: "#FAFAFA",
         "steel-blue": "#222F37",
         "gradient-light-primary": "#FDF4C2",
-        "gradient-dark-secondary": "#4A6879"
+        "gradient-dark-secondary": "#4A6879",
       },
 
       fontFamily: {

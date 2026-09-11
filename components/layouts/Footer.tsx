@@ -27,7 +27,7 @@ function Footer() {
                   href={item.href}
                   className="p-2 rounded-full bg-steel-blue transtion-transform ease-in duration-150 hover:scale-110"
                 >
-                  <Icon size={16} />
+                  <Icon size={16} color="#AFBEC6"/>
                 </Link>
               );
             })}
@@ -44,7 +44,7 @@ function Footer() {
                   {link.sublinks.map((sublink) => (
                     <li key={sublink.name}>
                       <Link
-                        className="link link-hover my-1 inline-block text-low_blue text-[15.2px]"
+                        className="link link-hover my-2.5 inline-block text-low_blue text-[15.2px]"
                         href={sublink.to}
                       >
                         {sublink.name}
