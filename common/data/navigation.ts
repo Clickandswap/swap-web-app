@@ -56,58 +56,39 @@ export const footerLinks = [
     name: "SOLUTIONS",
     sublinks: [
       {
-        name: "Buy crypto",
-        to: "/buy-crypto",
+        name: "Send Money",
+        to: "/send-money",
       },
       {
-        name: "Sell crypto",
-        to: "/sell-crypto",
+        name: "Receive Money",
+        to: "/receive-money",
       },
       {
-        name: "Swap crypto",
-        to: "/swap-crypto",
+        name: "Buy and Sell",
+        to: "/buy-and-sell",
       },
     ],
   },
 
   {
     id: 3,
-    name: "RESOURCES",
-    sublinks: [
-      {
-        name: "Blog",
-        to: "/blog",
-      },
-      {
-        name: "FAQs",
-        to: "/faqs",
-      },
-      {
-        name: "Help Center",
-        to: "/help-center",
-      },
-    ],
-  },
-
-  {
-    id: 4,
     name: "COMPANY",
     sublinks: [
       {
         name: "About",
         to: "/about",
       },
+            {
+        name: "Security",
+        to: "/security",
+      },
+            {
+        name: "Help Center",
+        to: "/help-center",
+      },
       {
         name: "Career",
         to: "/career",
-      },
-      {
-        name: "Partners",
-        to: "/partners",
-      },
-      {
-        name: "Investors",
-        to: "/investors",
       },
     ],
   },
