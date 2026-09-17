@@ -12,8 +12,12 @@ const space_grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ClickNSwap",
-  description: "All-in-One Solution for Money Without Borders",
+  title: "ClickAndSwap",
+  description: "Move money beyond borders",
+  authors: [
+    { name: "Lasisi Abdulsamad", url: "https://github.com/Samkayzeee" },
+  ],
+  keywords: ["ClickAndSwap", "Swap", "Swappers"],
 };
 
 export default function RootLayout({
