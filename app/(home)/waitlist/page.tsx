@@ -20,7 +20,7 @@ function WaitlistPage() {
             className="md:text-5xl text-2xl font-semibold font-space_grotesk text-center"
           >
             Be Among the First to join{" "}
-            <span className="text-primary">Click And Swap</span>
+            <span className="text-primary">Click and Swap</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, x: 30 }}
@@ -29,7 +29,7 @@ function WaitlistPage() {
             transition={{ delay: 0.6, duration: 0.6 }}
             className="text-center my-2"
           >
-            Send, receive, exchange, and spend money across borders.
+            Send, receive, exchange, and spend money beyond borders.
           </motion.p>
 
           <motion.form
@@ -149,7 +149,7 @@ function WaitlistPage() {
             <div className="flex gap-1 justify-center items-center my-3">
               <MdCopyright />
               <p className="text-lg font-medium">
-                 2025 ClickandSwap. All rights reserved.
+                 2026 Click and Swap LTD. All rights reserved.
               </p>
             </div>
           </motion.form>

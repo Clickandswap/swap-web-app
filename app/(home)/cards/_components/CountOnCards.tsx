@@ -59,7 +59,7 @@ function CountOnCards() {
             height={200}
             className="w-auto h-auto object-contain mt-4"
             alt="Single Card"
-            src={"/cards/single_card.png"}
+            src={"/cards/single_card.webp"}
           />
         </motion.div>
 
@@ -73,7 +73,7 @@ function CountOnCards() {
         >
           <div className="relative w-full rounded-2xl h-full">
             <Image
-              src={"/product_page/lady_holding_card_two.png"}
+              src={"/product_page/lady_holding_card_two_updated_two.webp"}
               alt="Card"
               width={700}
               height={300}
@@ -115,7 +115,7 @@ function CountOnCards() {
             height={200}
             className="w-auto h-auto object-contain"
             alt="Single Card"
-            src={"/cards/triple_card.png"}
+            src={"/cards/stacked_card.webp"}
           />
         </motion.div>
       </div>

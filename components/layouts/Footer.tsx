@@ -91,7 +91,7 @@ function Footer() {
       </div>
 
       <div className="flex sm:flex-row flex-col justify-between items-center mt-20 text-xs">
-        <p className="text-low_blue"> © 2026 ClickNSwap </p>
+        <p className="text-low_blue"> © 2026 Click and Swap LTD. All rights reserved.  </p>
         <div className="flex item-center justify-between gap-4 text-low_blue w-full sm:w-fit">
           <Link
             href={"/terms"}
