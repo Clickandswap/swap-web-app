@@ -15,7 +15,7 @@ function Solutions() {
         className="font-bold sm:text-4xl text-2xl font-space_grotesk lg:w-[65%] w-full"
       >
         Unlock the future of finance for your business. All-round solutions
-        powered by ClickAndSwap
+        powered by Click and Swap
       </motion.h3>
 
       <motion.p

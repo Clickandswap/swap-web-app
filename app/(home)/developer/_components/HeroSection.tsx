@@ -16,7 +16,7 @@ function HeroSection() {
           transition={{ duration: 0.6 }}
           className="bg-[#FEF0BD] py-2 px-5 w-fit mx-auto text-xs font-medium rounded-3xl"
         >
-          ClickAndSwap For Developers
+          Click and Swap For Developers
         </motion.p>
         <motion.h2
           initial={{ opacity: 0 }}
