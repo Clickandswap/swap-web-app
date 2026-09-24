@@ -17,7 +17,7 @@ function WaitlistPage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="md:text-5xl text-2xl font-semibold font-space_grotesk text-center"
+            className="md:text-5xl text-2xl font-semibold font-space_grotesk text-center text-light"
           >
             Be Among the First to join{" "}
             <span className="text-primary">Click and Swap</span>

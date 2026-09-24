@@ -44,10 +44,9 @@ function About() {
         </p>
 
         <p className="sm:text-base text-sm">
-          We use stablecoin rails to make cross-border payments faster, more
-          affordable, and more transparent — so money moves as freely as a
-          message. (Company/investor pages keep “infrastructure” user-facing
-          pages say “cross-borderpayments app.”)
+          We use stable coin rails to make cross-border payments faster, more
+          affordable, and more transparent so money moves as freely as a
+          message.
         </p>
       </motion.div>
     </main>
