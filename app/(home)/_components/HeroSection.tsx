@@ -96,6 +96,8 @@ function HeroSection() {
           width={500}
           height={500}
           className="absolute inset-0 h-full w-full object-contain"
+          loading="eager"
+          priority
           />
         </div>
       </motion.div>

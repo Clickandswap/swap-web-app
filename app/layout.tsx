@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,6 +33,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="font-inter">{children}</body>
+      <Script
+        id="tawk-to-chat"
+        strategy="lazyOnload"
+        src="https://embed.tawk.to/6ab94cb24578c1344330766e/1k3ht76gn"
+        crossOrigin="anonymous"
+      />
     </html>
   );
 }

@@ -23,7 +23,7 @@ function HeroSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="font-semibold leading-12 text-4xl md:w-[45%] mx-auto font-space_grotesk text-center mt-4"
+          className="font-semibold leading-12 md:text-4xl text-2xl md:w-[45%] mx-auto font-space_grotesk text-center mt-4"
         >
           Build on Click and Swap
         </motion.h2>
@@ -62,22 +62,23 @@ function HeroSection() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{
-          delay: 1.5,
-          // duration: 0.8,
+          delay: 0.5,
           stiffness: 120,
           damping: 12,
           mass: 0.8,
           type: "spring",
         }}
-        className="w-dvw h-dvh"
+        className="md:w-dvw md:h-dvh w-full h-80 overflow-hidden"
       >
         <Image
-          src={"/developer_page/developer_img.png"}
+          src={"/developer_page/developer_img.webp"}
           alt="Developer Image"
           width={1000}
           height={400}
-          className="object-cover w-full h-full"
+          // Added object-top so the upper half doesn't get cut off on mobile screens
+          className="md:object-cover object-contain object-top w-full h-full"
           loading="eager"
+          priority
         />
       </motion.div>
     </main>

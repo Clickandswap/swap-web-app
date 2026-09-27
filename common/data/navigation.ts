@@ -34,11 +34,11 @@ export const footerLinks = [
     sublinks: [
       {
         name: "Personal",
-        to: "/personal",
+        to: "/security",
       },
       {
         name: "Business",
-        to: "/business",
+        to: "/waitlist",
       },
       {
         name: "Cards",
@@ -76,7 +76,7 @@ export const footerLinks = [
     sublinks: [
       {
         name: "About",
-        to: "/about",
+        to: "/company",
       },
             {
         name: "Security",
