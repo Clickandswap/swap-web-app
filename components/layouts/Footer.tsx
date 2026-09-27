@@ -8,13 +8,15 @@ function Footer() {
     <main className="px-10 sm:px-28 pt-16 pb-6 bg-[url(/footer/footer_gradient_background.jpg)] bg-cover">
       <footer className="footer lg:footer-horizontal">
         <aside>
-          <Image
-            src={"/logos/ClickAndSwap_word_logo.png"}
-            alt="ClickNSwap Logo"
-            width={200}
-            height={200}
-            className="w-auto h-8 object-cover"
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/logos/ClickAndSwap_word_logo.png"}
+              alt="ClickNSwap Logo"
+              width={200}
+              height={200}
+              className="w-auto h-8 object-cover"
+            />
+          </Link>
           <p className="max-w-xs my-2 text-sm text-low_blue">
             Move money beyond borders.
           </p>
@@ -27,7 +29,7 @@ function Footer() {
                   href={item.href}
                   className="p-2 rounded-full bg-steel-blue transtion-transform ease-in duration-150 hover:scale-110"
                 >
-                  <Icon size={16} color="#AFBEC6"/>
+                  <Icon size={16} color="#AFBEC6" />
                 </Link>
               );
             })}
@@ -66,13 +68,14 @@ function Footer() {
         </p> */}
 
         <p className="text-center my-4 w-full">
-          <span className="font-bold">Disclaimer:</span> The information on this website is provided for general
-          information about Click and Swap’s products and services. Availability
-          may depend on your region and applicable legal or regulatory
-          requirements. While we strive to keep the information accurate and up
-          to date, features, pricing, and service availability may change
-          without notice. Please review the applicable Terms of Service and
-          other legal policies before using our services
+          <span className="font-bold">Disclaimer:</span> The information on this
+          website is provided for general information about Click and Swap’s
+          products and services. Availability may depend on your region and
+          applicable legal or regulatory requirements. While we strive to keep
+          the information accurate and up to date, features, pricing, and
+          service availability may change without notice. Please review the
+          applicable Terms of Service and other legal policies before using our
+          services
         </p>
       </div>
 
@@ -91,7 +94,10 @@ function Footer() {
       </div>
 
       <div className="flex sm:flex-row flex-col justify-between items-center mt-20 text-xs">
-        <p className="text-low_blue"> © 2026 Click and Swap LTD. All rights reserved.  </p>
+        <p className="text-low_blue">
+          {" "}
+          © 2026 Click and Swap LTD. All rights reserved.{" "}
+        </p>
         <div className="flex item-center justify-between gap-4 text-low_blue w-full sm:w-fit">
           <Link
             href={"/terms"}

@@ -46,6 +46,7 @@ function HeroSection() {
           height={200}
           className="w-auto h-auto object-contain"
           loading="eager"
+          priority
         />
       </motion.div>
     </main>
