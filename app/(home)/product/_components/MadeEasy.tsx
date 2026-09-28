@@ -15,7 +15,11 @@ function MadeEasy() {
       <div className="text-dark">
         {madeEasyCard.map((item, index) => {
           return (
-            <div key={item.id} className="flex lg:flex-row flex-col my-5">
+            <div
+              key={item.id}
+              className="flex lg:flex-row flex-col my-5"
+              id={`${item.name === "send" ? "send" : "receive"}`}
+            >
               <motion.div
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -37,7 +41,7 @@ function MadeEasy() {
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.4 }}
-                whileInView={{ opacity: 1, scale: 1}}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{
                   delay: 0.5,
