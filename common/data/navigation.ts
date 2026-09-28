@@ -57,15 +57,15 @@ export const footerLinks = [
     sublinks: [
       {
         name: "Send Money",
-        to: "/send-money",
+        to: "/product#send",
       },
       {
         name: "Receive Money",
-        to: "/receive-money",
+        to: "/product#receive",
       },
       {
         name: "Buy and Sell",
-        to: "/buy-and-sell",
+        to: "/product#swap",
       },
     ],
   },

@@ -2,10 +2,20 @@
 @config "../tailwind.config.ts";
 @plugin "daisyui";
 
+html {
+  scroll-behavior: smooth;
+}
+/* app/globals.css */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-   --color-primary: #fccd29; /* Gold-Yellow-500 */
+  --color-primary: #fccd29; /* Gold-Yellow-500 */
   --color-secondary: #517184; /* Steel-Blue-500 */
   --color-accent: #f59e0b; /* Amber-500 */
   --color-danger: #ef4444; /* Red-500 */
