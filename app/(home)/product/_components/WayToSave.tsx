@@ -5,13 +5,13 @@ import Image from "next/image";
 
 function WayToSave() {
   return (
-    <main className="py-20 bg-light flex md:flex-row flex-col-reverse gap-6 justify-center text-dark md:items-stretch items-center">
+    <main className="py-20 bg-light flex md:flex-row flex-col-reverse gap-6 justify-center text-dark md:items-stretch items-center md:px-0 px-6">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-[#FAFAFA] w-full max-w-100 rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between"
+        className="bg-[#FAFAFA] w-full max-w-100 rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col justify-between h-100"
       >
         {/* Text Container */}
         <div className="p-6 md:p-8">
@@ -25,13 +25,13 @@ function WayToSave() {
         </div>
 
         {/* Image Container */}
-        <div className="w-full mt-auto pt-4">
+        <div className="w-full mt-auto pt-4 h-1/2 relative">
           <Image
             src="/product_page/hold_coins_clippath.png"
             width={400}
             height={300}
             alt="Coin"
-            className="w-full h-auto object-contain block"
+            className="w-full h-auto object-contain block absolute bottom-0"
             loading="eager"
           />
         </div>

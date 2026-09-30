@@ -76,7 +76,7 @@ function WhatYouCanDo() {
               <Image
                 width={1000}
                 height={1000}
-                src={"/clicknswap_mockup/clicknswap_mockup_three.png"}
+                src={"/clicknswap_mockup/clicknswap_mockup_three.webp"}
                 alt="ClickNSwap Mobile Mockup"
                 className="h-full w-full object-cover"
               />
