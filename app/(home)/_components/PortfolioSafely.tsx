@@ -67,11 +67,11 @@ function PortfolioSafely() {
         </div>
 
         <Image
-          src={"/clicknswap_mockup/clicknswap_mockup_three.png"}
+          src={"/clicknswap_mockup/clicknswap_mockup_three.webp"}
           alt="ClickNSwap Mockup"
           width={2500}
           height={2000}
-          className="lg:w-auto lg:h-auto w-full lg:object-contain lg:absolute lg:-right-70 lg:-bottom-80 bottom-0 right-0"
+          className="lg:w-auto lg:h-auto w-full lg:object-contain lg:absolute lg:-right-70 lg:-bottom-80 bottom-0 right-0 top-0"
           loading="lazy"
         />
       </motion.div>

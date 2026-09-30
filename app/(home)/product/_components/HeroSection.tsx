@@ -63,11 +63,11 @@ function HeroSection() {
         className="bg-[url(/product_page/crypto_card_bg.png)] h-full lg:w-1/2 w-full lg:px-0 px-6 lg:block flex justify-center"
       >
         <Image
-          src={"/clicknswap_mockup/clicknswap_mockup_two.png"}
+          src={"/clicknswap_mockup/clicknswap_mockup_two.webp"}
           alt="ClickNSwap Dashboard MockUp"
           width={300}
           height={200}
-          className="lg:w-auto lg:h-auto w-fit h-fit object-contain lg:absolute right-30 -bottom-115"
+          className="lg:w-auto lg:h-auto w-fit h-fit object-contain lg:absolute right-30 -bottom-115 top-30"
           loading="eager"
         />
       </motion.div>

@@ -84,7 +84,7 @@ export const footerLinks = [
       },
             {
         name: "Help Center",
-        to: "/help-center",
+        to: "/help",
       },
       {
         name: "Career",
