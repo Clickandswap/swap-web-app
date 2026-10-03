@@ -5,19 +5,51 @@ import { usePathname } from "next/navigation";
 import { navLinks } from "@/common/data/navigation";
 import Link from "next/link";
 import Button from "../ui/Button";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 
 function Navbar() {
   const pathname = usePathname();
-  const [openDropdown, setOpenDropdown] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(false); // mobile menu
+  const [desktopSub, setDesktopSub] = useState<number | null>(null); // desktop dropdown
+  const [mobileSub, setMobileSub] = useState<number | null>(null); // mobile accordion
+  const desktopRef = useRef<HTMLDivElement>(null);
 
   const closeMenu = () => {
     if (document.activeElement instanceof HTMLElement) {
       document.activeElement.blur();
     }
     setOpenDropdown(false);
+    setMobileSub(null);
+    setDesktopSub(null);
   };
+
+  // close desktop dropdown on outside click or Escape
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (
+        desktopRef.current &&
+        !desktopRef.current.contains(e.target as Node)
+      ) {
+        setDesktopSub(null);
+      }
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setDesktopSub(null);
+    };
+    document.addEventListener("mousedown", onClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, []);
+
+  // close dropdowns when the route changes
+  useEffect(() => {
+    setDesktopSub(null);
+  }, [pathname]);
 
   return (
     <nav className="bg-dark text-light relative z-50 ">
@@ -57,7 +89,6 @@ function Navbar() {
             </option>
           </select>
 
-
           {/* mobile menu icon */}
           <div className="flex items-center lg:hidden">
             <button
@@ -83,19 +114,78 @@ function Navbar() {
 
       {/* desktop nav */}
       <section className="lg:flex items-center justify-between sm:px-28 px-10 py-4 border-y border-y-primary hidden">
-        <div className="flex items-center gap-8">
+        <div ref={desktopRef} className="flex items-center gap-8">
           {navLinks.map((link) => {
-            const isActive = pathname === link.to;
+            const hasSub = !!link.sublink?.length;
+            const isActive =
+              pathname === link.to ||
+              (hasSub && link.sublink!.some((s) => pathname === s.to));
+            // links with a dropdown only turn primary when one of their pages is active
+            const itemClass = `inline-flex items-center gap-1 text-lg transition-all ease-in-out duration-200 ${
+              isActive ? "text-primary scale-105" : "text-light"
+            } ${hasSub ? "" : "hover:text-primary"} hover:scale-105`;
+            if (!hasSub) {
+              return (
+                <Link key={link.id} href={link.to} className={itemClass}>
+                  {link.name}
+                </Link>
+              );
+            }
+
+            const isOpen = desktopSub === link.id;
+
             return (
-              <Link
+              <div
                 key={link.id}
-                href={link.to}
-                className={`inline-block text-lg transition-all ease-in-out duration-200 ${
-                  isActive ? "text-primary scale-105" : "text-light"
-                } hover:scale-105 hover:text-primary`}
+                className="relative"
+                onMouseEnter={() => setDesktopSub(link.id)}
+                onMouseLeave={() => setDesktopSub(null)}
               >
-                {link.name}
-              </Link>
+                <button
+                  type="button"
+                  className={`${itemClass} cursor-pointer`}
+                  aria-haspopup="true"
+                  aria-expanded={isOpen}
+                  onClick={() => setDesktopSub(isOpen ? null : link.id)}
+                >
+                  {link.name}
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+
+                {isOpen && (
+                  <div className="absolute left-0 top-full pt-4 z-50">
+                    <motion.div
+                      initial={{ opacity: 0, y: -6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.15 }}
+                      role="menu"
+                      className="w-72 rounded-xl bg-white p-2 shadow-xl"
+                    >
+                      {link.sublink!.map((sub) => (
+                        <Link
+                          key={sub.id}
+                          href={sub.to}
+                          role="menuitem"
+                          onClick={() => setDesktopSub(null)}
+                          className={`block rounded-lg px-4 py-3 transition-colors hover:bg-[#FFF8E6] focus-visible:bg-[#FFF8E6] focus-visible:outline-none ${
+                            pathname === sub.to ? "bg-[#FFF8E6]" : ""
+                          }`}
+                        >
+                          <p className="font-semibold text-black">{sub.name}</p>
+                          {sub.description && (
+                            <p className="mt-0.5 text-xs leading-snug text-gray-500">
+                              {sub.description}
+                            </p>
+                          )}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  </div>
+                )}
+              </div>
             );
           })}
         </div>
@@ -137,24 +227,70 @@ function Navbar() {
         }`}
       >
         <div className="flex flex-col items-center justify-center py-4">
-          {navLinks.map((item) => (
-            <motion.div
-              key={item.id}
-              variants={{
-                open: { opacity: 1, y: 0 },
-                closed: { opacity: 0, y: -10 },
-              }}
-            >
-              <Link
-                href={item.to}
-                className={`block text-white py-2 text-lg transition-transform ease-in-out duration-300 hover:-translate-y-1`}
-                role="menuitem"
-                onClick={closeMenu}
+          {navLinks.map((item) => {
+            const hasSub = !!item.sublink?.length;
+            const isOpen = mobileSub === item.id;
+
+            return (
+              <motion.div
+                key={item.id}
+                variants={{
+                  open: { opacity: 1, y: 0 },
+                  closed: { opacity: 0, y: -10 },
+                }}
+                className="flex flex-col items-center"
               >
-                {item.name}
-              </Link>
-            </motion.div>
-          ))}
+                {hasSub ? (
+                  <>
+                    <button
+                      type="button"
+                      aria-expanded={isOpen}
+                      onClick={() => setMobileSub(isOpen ? null : item.id)}
+                      className="flex items-center gap-1 text-white py-2 text-lg"
+                    >
+                      {item.name}
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                      />
+                    </button>
+
+                    {isOpen && (
+                      <div className="mb-2 w-64 rounded-xl bg-white p-2">
+                        {item.sublink!.map((sub) => (
+                          <Link
+                            key={sub.id}
+                            href={sub.to}
+                            role="menuitem"
+                            onClick={closeMenu}
+                            className="block rounded-lg px-3 py-2 active:bg-[#FFF8E6] hover:bg-[#FFF8E6]"
+                          >
+                            <p className="text-sm font-semibold text-black">
+                              {sub.name}
+                            </p>
+                            {sub.description && (
+                              <p className="text-xs text-gray-500">
+                                {sub.description}
+                              </p>
+                            )}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    href={item.to}
+                    className="block text-white py-2 text-lg transition-transform ease-in-out duration-300 hover:-translate-y-1"
+                    role="menuitem"
+                    onClick={closeMenu}
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </motion.div>
+            );
+          })}
 
           <motion.div
             variants={{
