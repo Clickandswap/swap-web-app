@@ -62,11 +62,14 @@ function WhyClickNSwap() {
                   unoptimized={true}
                   loading="lazy"
                   className="object-contain"
+                  style={{ width: 100, height: "auto" }}
                 />
               </figure>
               <div className="card-body">
                 <h2 className="card-title font-bold text-2xl">{item.title}</h2>
-                <p className="md:text-base text-sm md:w-[80%]">{item.details}</p>
+                <p className="md:text-base text-sm md:w-[80%]">
+                  {item.details}
+                </p>
               </div>
             </motion.div>
           );

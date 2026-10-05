@@ -1,13 +1,14 @@
 "use client";
 
 import Button from "@/components/ui/Button";
+import GlobeOrbit from "@/components/ui/GlobeOrbit";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 
 function HeroSection() {
   return (
-    <main className="text-light bg-dark md:pt-28 pt-10 md:pb-24 pb-8  h-max flex flex-col lg:flex-row justify-between">
+    <main className="text-light bg-dark md:pt-28 pt-10 md:pb-24 pb-8 h-max flex flex-col lg:flex-row justify-between">
       <div className="md:px-28 px-6 lg:w-[60%] md:mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -66,17 +67,9 @@ function HeroSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="w-[40%] lg:mt-0 mt-10 lg:px-12 px-4 lg:self-auto self-center"
+        className="md:w-[40%] w-full lg:mt-0 mt-10 lg:px-12 px-4 lg:self-auto self-center"
       >
-        {/* <Image
-          src={"/landing_page/big_slope_home.png"}
-          alt="Home Page Hero Slope"
-          width={500}
-          height={300}
-          className="md:h-auto h-full w-full object-cover"
-          loading="eager"
-        /> */}
-        <div className="relative aspect-square w-full max-w-140 overflow-hidden rounded-2xl">
+        {/* <div className="relative aspect-square w-full max-w-140 overflow-hidden rounded-2xl">
           <video
             autoPlay
             loop
@@ -99,7 +92,9 @@ function HeroSection() {
           loading="eager"
           priority
           />
-        </div>
+        </div> */}
+
+        <GlobeOrbit />
       </motion.div>
     </main>
   );

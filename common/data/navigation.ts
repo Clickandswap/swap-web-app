@@ -13,6 +13,26 @@ export const navLinks = [
     id: 2,
     name: "Product",
     to: "/product",
+    sublink: [
+      {
+        id:"1",
+        name:"Click and Swap Card",
+        description:"Order a physical, Prepaid or Virtual card for safe payment.",
+        to: "/cards"
+      },
+      {
+        id:"2",
+        name: "Product",
+        description: "",
+        to: "/product"
+      },
+      {
+        id: "3",
+        name: "Developers",
+        description: "",
+        to: "/developer"
+      }
+    ]
   },
 
   {

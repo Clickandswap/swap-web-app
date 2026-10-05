@@ -5,13 +5,13 @@ import FirstToExperience from "@/components/home-constant/first-to-experience";
 
 function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex flex-1 flex-col">
+    <div className="flex flex-1 flex-col">
       <Navbar />
-      <main className="flex-1 bg-background overflow-hidden">
+      <main className="flex-1 bg-background overflow-x-clip">
         {children}
       </main>
       <Footer />
-    </main>
+    </div>
   );
 }
 

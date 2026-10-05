@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function Faqs() {
   const faqs = [
@@ -70,7 +71,9 @@ function Faqs() {
             </div>
           );
         })}
+        <Link href={'/faqs'} className="underline font-semibold font-space_grotesk text-base p-4">See more...</Link>
       </motion.div>
+
     </main>
   );
 }
