@@ -32,7 +32,7 @@ function WaitlistPage() {
             Send, receive, exchange, and spend money beyond borders.
           </motion.p>
 
-          <motion.form
+          {/* <motion.form
             action=""
             className="w-full bg-light rounded-xl py-8 px-6 text-dark my-4"
             initial={{ opacity: 0, scale: 0.4 }}
@@ -127,7 +127,6 @@ function WaitlistPage() {
               </span>
             </div>
 
-            {/* icons */}
             <div className="flex gap-6 items-center justify-center my-2">
               <button>
                 <FaFacebookF size={22} />
@@ -152,7 +151,20 @@ function WaitlistPage() {
                  2026 Click and Swap LTD. All rights reserved.
               </p>
             </div>
-          </motion.form>
+          </motion.form> */}
+
+          <div className="flex justify-center px-4 py-10">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSc2ybjgGYtA65EE7Su5-umT212lD5EB3yO_6D10ZFC9X5mRdQ/viewform?embedded=true"
+              title="Contact form"
+              loading="lazy"
+              className="h-200 w-full max-w-160 border-0 md:h-250"
+            >
+              Loading…
+            </iframe>
+          </div>
+
+          
         </main>
       </div>
     </main>
