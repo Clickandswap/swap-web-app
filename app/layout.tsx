@@ -13,12 +13,21 @@ const space_grotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ClickAndSwap",
+  metadataBase: new URL("https://clickandswap.com"),
+  title: {
+    default: "Click and Swap",
+    template: "%s - Click and Swap",
+  },
   description: "Move money beyond borders",
+  openGraph: {
+    siteName: "Click and Swap",
+    type: "website",
+    images: ["/clickNSwap_icon.png"],
+  },
   authors: [
     { name: "Lasisi Abdulsamad", url: "https://github.com/Samkayzeee" },
   ],
-  keywords: ["ClickAndSwap", "Swap", "Swappers"],
+  keywords: ["ClickAndSwap", "Swap", "Swappers", "Click and Swap"],
 };
 
 export default function RootLayout({
@@ -31,6 +40,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${space_grotesk.variable}`}
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
     >
       <body className="font-inter">{children}</body>
       <Script
