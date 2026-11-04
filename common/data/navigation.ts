@@ -27,11 +27,11 @@ export const navLinks = [
         to: "/product"
       },
       {
-        id: "3",
-        name: "Developers",
+        id:"3",
+        name: "Waitlist",
         description: "",
-        to: "/developer"
-      }
+        to: "/waitlist"
+      },
     ]
   },
 
