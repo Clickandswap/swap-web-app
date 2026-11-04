@@ -6,6 +6,12 @@ import PortfolioSafely from "../_components/PortfolioSafely";
 import WhatYouCanDo from "../_components/WhatYouCanDo";
 import Transactions from "../_components/Transactions";
 import HowWeProtect from "./_components/HowWeProtect";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Security",
+  description: "Your money and data, protected at every layer",
+};
 
 function SecurityPage() {
   return (

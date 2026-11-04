@@ -9,9 +9,9 @@ import { MdCopyright } from "react-icons/md";
 
 function WaitlistPage() {
   return (
-    <main className="bg-[url(/product_page/crypto_card_bg.png)] min-h-dvh w-dvw bg-cover">
+    <main className="bg-[url(/product_page/crypto_card_bg.webp)] min-h-dvh w-dvw bg-cover">
       <div className="bg-dark/90 h-full w-full flex items-center justify-center md:pt-40 md:pb-20">
-        <main className="w-[60%]">
+        <main className="md:w-[60%] w-full px-2">
           <motion.h2
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -153,7 +153,7 @@ function WaitlistPage() {
             </div>
           </motion.form> */}
 
-          <div className="flex justify-center px-4 py-10">
+          <div className="flex justify-center px-4 py-10 w-full">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSc2ybjgGYtA65EE7Su5-umT212lD5EB3yO_6D10ZFC9X5mRdQ/viewform?embedded=true"
               title="Contact form"

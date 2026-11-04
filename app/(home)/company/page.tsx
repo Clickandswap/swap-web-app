@@ -6,6 +6,12 @@ import GettingStarted from "@/components/home-constant/getting-started";
 import Faqs from "@/components/home-constant/faqs";
 import WorkWithUs from "./_components/WorkWithUs";
 import Team from "./_components/Team";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Company",
+  description: "Know more About us, the team behind click and swap, and click and swap functions.",
+};
 
 function CompanyPage() {
   return (

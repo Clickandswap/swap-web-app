@@ -4,6 +4,7 @@ import Button from "@/components/ui/Button";
 import GlobeOrbit from "@/components/ui/GlobeOrbit";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { IoLogoAppleAppstore, IoLogoGooglePlaystore } from "react-icons/io5";
 
 function HeroSection() {
@@ -50,15 +51,23 @@ function HeroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 1, duration: 0.6 }}
-          className="flex flex-col md:flex-row justify-between gap-4"
+          className="flex flex-col md:flex-row justify-between gap-4 items-center"
         >
-          <Button className="bg-primary md:w-1/2 text-dark flex items-center justify-center gap-1.5 font-space_grotesk py-3">
+          {/* <Button className="bg-primary md:w-1/2 text-dark flex items-center justify-center gap-1.5 font-space_grotesk py-3">
             {" "}
             <IoLogoAppleAppstore /> <IoLogoGooglePlaystore /> Download App{" "}
-          </Button>
-          <Button className="border border-primary text-light md:w-1/2 font-space_grotesk">
+          </Button> */}
+
+          <p className="font-space_grotesk text-sm">
+            Coming Soon on iOS and Android
+          </p>
+          <Link
+            href={"/waitlist"}
+            className="transition-all ease-in-out duration-150 hover:-translate-y-1 py-3 hover:shadow-lg border rounded-full flex items-center justify-center border-primary text-light md:w-1/2 w-full font-space_grotesk"
+
+          >
             Join the waitlist
-          </Button>
+          </Link>
         </motion.div>
       </div>
 
