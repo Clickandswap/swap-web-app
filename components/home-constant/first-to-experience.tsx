@@ -5,6 +5,7 @@ import Image from "next/image";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { IoLogoAppleAppstore } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function FirstToExperience() {
   return (
@@ -51,7 +52,7 @@ function FirstToExperience() {
         <p className="text-foundation_blue my-6 text-center">
           Join the early-access list and move money <br /> beyond borders.
         </p>
-        <Button
+        <Link href={'/waitlist'}
           className="inline-flex rounded-full p-px my-4"
           style={{
             background: "linear-gradient(135deg, #FFD964, #99823C)",
@@ -60,7 +61,7 @@ function FirstToExperience() {
           <div className="rounded-full bg-light px-8 py-2 text-sm text-dark">
             Join the Waitlist
           </div>
-        </Button>
+        </Link>
       </div>
     </motion.main>
   );

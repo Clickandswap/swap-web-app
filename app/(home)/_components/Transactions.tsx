@@ -71,29 +71,32 @@ function Transactions() {
                     <p className="my-2">{item.details}</p>
 
                     {item.buttonPresent && (
-                      <div className="flex md:flex-row flex-col gap-6 items-center mt-5">
-                        <Button className="bg-dark text-light flex gap-2 items-center py-2 px-6 justify-center md:w-auto w-full">
-                          <Image
-                            width={200}
-                            height={200}
-                            src={"/store_badges/playstore_icon.png"}
-                            alt="Play Store Icon"
-                            className="w-5 h-5 object-contain"
-                          />
+                      // <div className="flex md:flex-row flex-col gap-6 items-center mt-5">
+                      //   <Button className="bg-dark text-light flex gap-2 items-center py-2 px-6 justify-center md:w-auto w-full">
+                      //     <Image
+                      //       width={200}
+                      //       height={200}
+                      //       src={"/store_badges/playstore_icon.png"}
+                      //       alt="Play Store Icon"
+                      //       className="w-5 h-5 object-contain"
+                      //     />
 
-                          <h4 className="font-space_grotesk font-medium text-lg">
-                            Play Store
-                          </h4>
-                        </Button>
+                      //     <h4 className="font-space_grotesk font-medium text-lg">
+                      //       Play Store
+                      //     </h4>
+                      //   </Button>
 
-                        <Button className="bg-dark text-light flex gap-2 items-center py-2 px-6 justify-center md:w-auto w-full">
-                          <FaApple color="white" size={20} />
+                      //   <Button className="bg-dark text-light flex gap-2 items-center py-2 px-6 justify-center md:w-auto w-full">
+                      //     <FaApple color="white" size={20} />
 
-                          <h4 className="font-space_grotesk font-medium text-lg">
-                            App Store
-                          </h4>
-                        </Button>
-                      </div>
+                      //     <h4 className="font-space_grotesk font-medium text-lg">
+                      //       App Store
+                      //     </h4>
+                      //   </Button>
+                      // </div>
+                      <p className="font-space_grotesk font-medium text-lg">
+                        Coming Soon on iOS and Android
+                      </p>
                     )}
                   </div>
                 </div>

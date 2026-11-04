@@ -5,7 +5,12 @@ import NeedHelp from "@/components/home-constant/NeedHelp";
 import Faqs from "@/components/home-constant/faqs";
 import ApiUsage from "./_components/ApiUsage";
 import FirstToExperience from "@/components/home-constant/first-to-experience";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Developers",
+  description: "Build on Click and Swap",
+};
 
 function DeveloperPage() {
   return (
@@ -15,9 +20,8 @@ function DeveloperPage() {
       <ApiUsage />
       <Faqs />
       <FirstToExperience />
-      </main>
-
-  )
+    </main>
+  );
 }
 
 export default DeveloperPage;

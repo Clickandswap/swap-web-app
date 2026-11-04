@@ -16,7 +16,7 @@ function About() {
         className="px-6 pt-1 bg-[#202020] h-dvh lg:w-[35%]"
       >
         <Image
-          src={"/company_page/about_us_img.png"}
+          src={"/company_page/about_us_img.webp"}
           alt="Company's Personels"
           width={500}
           height={500}

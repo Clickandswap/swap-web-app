@@ -90,7 +90,7 @@ export const madeEasyCard = [
     details:
       "Send money to anyone, anywhere in seconds. Transactions are fast, reliable, and designed to keep things simple every time.",
     img_path: "/product_page/send_different_currencies.png",
-    img_bg: "/product_page/product_send_bg.png"
+    img_bg: "/product_page/product_send_bg.webp"
   },
 
   {
@@ -99,7 +99,7 @@ export const madeEasyCard = [
     details:
       "Convert your crypto instantly without switching platforms. The process is smooth, fast, and built for everyday use.",
     img_path: "/product_page/swap_view.png",
-    img_bg: "/product_page/product_swap_bg.png"
+    img_bg: "/product_page/product_swap_bg.webp"
   },
 
   {
@@ -108,7 +108,7 @@ export const madeEasyCard = [
     details:
       "Accept payments from anywhere in the world without limits. Track every transaction easily with instant confirmations",
     img_path: "/product_page/payment_received.png",
-    img_bg:"/product_page/product_receive_bg.png"
+    img_bg:"/product_page/product_receive_bg.webp"
   },
 ];
 

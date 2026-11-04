@@ -8,8 +8,8 @@ import Image from "next/image";
 function FinancePlatform() {
   return (
     <main className="md:px-28 px-6 py-16">
-      <div className="flex justify-between items-center">
-        <h2 className="bg-linear-to-r from-dark to-[#517184] bg-clip-text text-transparent font-bold text-3xl font-space_grotesk">
+      <div className="flex justify-between items-center flex-col md:flex-row gap-2">
+        <h2 className="bg-linear-to-r from-dark to-[#517184] bg-clip-text text-transparent font-bold md:text-3xl text-xl font-space_grotesk">
           The all in one finance platform <br /> you've been looking for
         </h2>
 

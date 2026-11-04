@@ -7,7 +7,12 @@ import Transactions from "../_components/Transactions";
 import Faqs from "@/components/home-constant/faqs";
 import FirstToExperience from "@/components/home-constant/first-to-experience";
 import WayToSave from "./_components/WayToSave";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Products Page",
+  description: "Click and Swap Products and functions",
+};
 
 function ProductPage() {
   return (
@@ -22,8 +27,8 @@ function ProductPage() {
 
       {/* <MadeSimple /> */}
       {/* <GettingStarted /> */}
-   </main>
-  )
+    </main>
+  );
 }
 
 export default ProductPage;

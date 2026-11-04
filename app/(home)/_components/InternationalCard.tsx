@@ -53,12 +53,16 @@ function InternationalCard() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col lg:flex-row justify-between gap-4"
+          className="flex flex-col lg:flex-row justify-between items-center gap-4"
         >
-          <Button className="bg-dark lg:w-1/2 text-light flex items-center justify-center gap-1.5 font-space_grotesk">
+          {/* <Button className="bg-dark lg:w-1/2 text-light flex items-center justify-center gap-1.5 font-space_grotesk">
             {" "}
             <IoLogoAppleAppstore /> <IoLogoGooglePlaystore /> Download App{" "}
-          </Button>
+          </Button> */}
+
+          <p className="font-space_grotesk text-sm font-medium">
+            Coming Soon on iOS and Android
+          </p>
           <Button className="border border-dark text-dark lg:w-1/2 font-space_grotesk">
             Use Prepaid
           </Button>
@@ -66,8 +70,8 @@ function InternationalCard() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, }}
-        whileInView={{ opacity: 1,}}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{
           delay: 0.8,

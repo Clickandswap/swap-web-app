@@ -57,8 +57,8 @@ function WhyClickNSwap() {
                 <Image
                   src={item.img_path}
                   alt="Card Gif Representations"
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={600}
                   unoptimized={true}
                   loading="lazy"
                   className="object-contain"

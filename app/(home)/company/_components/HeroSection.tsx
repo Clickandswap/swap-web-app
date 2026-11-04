@@ -40,7 +40,7 @@ function HeroSection() {
         className="w-fit mx-auto mt-6"
       >
         <Image
-          src={"/company_page/business_plan.png"}
+          src={"/company_page/business_plan.webp"}
           alt="Business Plan"
           width={500}
           height={200}

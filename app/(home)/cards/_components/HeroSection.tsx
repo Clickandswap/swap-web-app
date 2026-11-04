@@ -65,7 +65,7 @@ function HeroSection() {
         <Image
           width={500}
           height={500}
-          src={"/cards/cards_updated.png"}
+          src={"/cards/cards_updated.webp"}
           alt="Cards"
           className="w-auto h-auto object-cover"
           loading="eager"

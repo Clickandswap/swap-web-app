@@ -1,14 +1,20 @@
-import React from 'react'
-import HeroSection from './_components/HeroSection';
-import FaqsComponent from './_components/FaqsComponent';
+import React from "react";
+import HeroSection from "./_components/HeroSection";
+import FaqsComponent from "./_components/FaqsComponent";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions",
+  description: "Answers for frequently asked questions",
+};
 
 function FaqsPage() {
   return (
-    <main className='overflow-x-clip text-dark'>
-        <HeroSection />
-        <FaqsComponent />
+    <main className="overflow-x-clip text-dark">
+      <HeroSection />
+      <FaqsComponent />
     </main>
-  )
+  );
 }
 
 export default FaqsPage;

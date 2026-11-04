@@ -84,12 +84,7 @@ function HelpDeskFaqs() {
               >
                 {/* title and number of questions */}
                 <div className="flex justify-between items-center py-4 border-b">
-                  <div className="flex gap-4 items-end font-space_grotesk">
-                    <p className="text-xs font-bold">
-                      {item.id < 10 && "0"}
-                      {item.id}
-                    </p>
-
+                  <div className="font-space_grotesk">
                     <h3 className="font-semibold text-xl">{item.title}</h3>
                   </div>
 

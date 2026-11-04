@@ -60,7 +60,7 @@ function HeroSection() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="bg-[url(/product_page/crypto_card_bg.png)] h-full lg:w-1/2 w-full lg:px-0 px-6 lg:block flex justify-center"
+        className="bg-[url(/product_page/crypto_card_bg.webp)] h-full lg:w-1/2 w-full lg:px-0 px-6 lg:block flex justify-center"
       >
         <Image
           src={"/clicknswap_mockup/clicknswap_mockup_two.webp"}
