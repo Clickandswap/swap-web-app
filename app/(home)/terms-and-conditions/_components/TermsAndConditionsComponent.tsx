@@ -80,10 +80,10 @@ function TermsAndConditionsComponent() {
                 {/* title and number of terms */}
                 <div className="flex justify-between items-center py-4 border-b border-b-primary">
                   <div className="flex gap-4 items-end font-space_grotesk">
-                    <p className="text-xs font-bold shrink-0">
+                    {/* <p className="text-xs font-bold shrink-0">
                       {item.id < 10 && "0"}
                       {item.id}
-                    </p>
+                    </p> */}
 
                     <h3 className="font-semibold text-lg md:text-xl">
                       {item.title}
