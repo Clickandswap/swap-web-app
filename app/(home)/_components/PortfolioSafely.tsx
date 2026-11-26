@@ -54,9 +54,9 @@ function PortfolioSafely() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="bg-[#EEF9FF] py-12 rounded-xl lg:h-110 h-150 flex lg:flex-row flex-col items-end relative overflow-hidden"
+        className="relative flex flex-col overflow-hidden rounded-xl bg-[#EEF9FF] py-12 lg:h-110 lg:flex-row lg:items-end"
       >
-        <div className="lg:w-[40%] w-full px-5 my-auto lg:ms-10 ">
+        <div className="my-auto w-full px-5 lg:ms-10 lg:w-[40%]">
           <h2 className="font-bold text-3xl font-space_grotesk">
             Send to any Click and Swap user for free
           </h2>
@@ -71,7 +71,8 @@ function PortfolioSafely() {
           alt="ClickNSwap Mockup"
           width={2500}
           height={2000}
-          className="lg:w-auto lg:h-auto w-full lg:object-contain lg:absolute lg:-right-70 lg:-bottom-80 bottom-0 right-0 top-0"
+          sizes="(min-width: 1024px) 55vw, 100vw"
+          className="mt-6 h-auto w-full object-contain lg:absolute lg:-bottom-16 lg:right-0 lg:mt-0 lg:w-[55%] lg:max-w-none"
           loading="lazy"
         />
       </motion.div>
