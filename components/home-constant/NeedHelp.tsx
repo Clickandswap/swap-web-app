@@ -26,14 +26,14 @@ function NeedHelp() {
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="lg:absolute right-30 bottom-0 lg:h-95 h-105"
+        className="lg:absolute right-30 bottom-0 h-105 lg:h-95"
       >
         <Image
           src={"/landing_page/lady_thumbs_up.jpg"}
           alt="Need Help? Image"
-          width={200}
-          height={200}
-          className="lg:w-auto w-full lg:h-auto h-full object-contain shadow-2xl"
+          width={800} // replace with the file's real width
+          height={1000} // replace with the file's real height
+          className="h-full w-full object-contain shadow-2xl lg:w-auto"
           loading="lazy"
         />
       </motion.div>

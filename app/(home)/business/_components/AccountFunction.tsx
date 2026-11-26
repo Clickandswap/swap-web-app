@@ -10,7 +10,7 @@ function AccountFunction() {
           alt="Account Types Opening"
           width={300}
           height={300}
-          className="w-auto h-auto object-contain"
+          className="w-auto h-auto object-contain mb-10 ml-5"
         />
         <div className="py-2 px-6 rounded-full text-[#D8AA0E] font-medium text-lg bg-light border border-secondary w-fit -rotate-6 absolute left-6 top-6">
           Send
