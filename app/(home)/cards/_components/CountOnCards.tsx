@@ -55,9 +55,9 @@ function CountOnCards() {
             award-winning support.
           </p>
           <Image
-            width={200}
-            height={200}
-            className="w-auto h-auto object-contain mt-4"
+            width={1000}
+            height={1000}
+            className="w-full h-auto object-contain mt-4"
             alt="Single Card"
             src={"/cards/single_card.webp"}
           />
@@ -111,9 +111,9 @@ function CountOnCards() {
             </p>
           </div>
           <Image
-            width={200}
-            height={200}
-            className="w-auto h-auto object-contain"
+            width={1000}
+            height={1000}
+            className="w-full h-auto object-contain"
             alt="Single Card"
             src={"/cards/stacked_card.webp"}
           />
