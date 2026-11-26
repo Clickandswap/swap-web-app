@@ -25,7 +25,7 @@ function HeroSection() {
         transition={{ delay: 0.6, duration: 0.6 }}
         className="font-semibold md:leading-12 md:text-4xl text-2xl md:w-[45%] mx-auto font-space_grotesk text-center mt-4"
       >
-        One card for all your global spending.
+        One card for all your global <br /> spending.
       </motion.h2>
 
       <motion.p
@@ -35,8 +35,8 @@ function HeroSection() {
         transition={{ delay: 1, duration: 0.6 }}
         className="text-base text-center mt-4 md:w-[50%] mx-auto"
       >
-        Spend online and in-store anywhere, with automatic conversion to local
-        currency at checkout.
+        Spend online and in-store anywhere, with automatic conversion to <br />
+        local currency at checkout.
       </motion.p>
 
       <motion.div
@@ -44,13 +44,13 @@ function HeroSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 1.6, duration: 0.6 }}
-        className="flex sm:flex-row flex-col justify-between gap-4 my-6 md:w-[50%] md:mx-auto"
+        className="flex sm:flex-row flex-col justify-center gap-4 my-6 md:w-[50%] md:mx-auto"
       >
-        <Button className="bg-primary sm:w-1/2 w-full text-dark flex items-center justify-center gap-1.5 font-space_grotesk">
+        <Button className="px-10 bg-primary sm:w-fit w-full text-dark flex items-center justify-center gap-1.5 font-space_grotesk">
           {" "}
           <IoLogoAppleAppstore /> <IoLogoGooglePlaystore /> Coming Soon{" "}
         </Button>
-        <Button className="sm:w-1/2 w-full font-space_grotesk text-dark shadow-inner border border-primary">
+        <Button className="sm:w-fit w-full font-space_grotesk text-dark shadow-inner border border-primary px-10">
           Join the waitlist
         </Button>
       </motion.div>
@@ -60,14 +60,14 @@ function HeroSection() {
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="flex items-center justify-center"
+        className="flex items-center justify-center w-full"
       >
         <Image
-          width={500}
-          height={500}
+          width={1000}
+          height={1000}
           src={"/cards/cards_updated.webp"}
           alt="Cards"
-          className="w-auto h-auto object-cover"
+          className="w-full h-auto object-cover"
           loading="eager"
         />
       </motion.div>

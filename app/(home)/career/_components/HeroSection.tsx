@@ -45,7 +45,7 @@ function HeroSection() {
         className="w-full mt-8 h-110"
       >
         <Image
-          src={"/company_page/about_us_img.png"}
+          src={"/company_page/about_us_img.webp"}
           width={500}
           height={500}
           alt="ClickNSwap Career Image"

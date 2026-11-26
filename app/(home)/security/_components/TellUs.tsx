@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function TellUs() {
   return (
@@ -22,7 +23,8 @@ function TellUs() {
           team is here to help quickly.
         </p>
 
-        <Button
+        <Link
+          href="mailto:support@clickandswap.com"
           className="inline-flex rounded-full p-px my-4"
           style={{
             background: "linear-gradient(135deg, #FFD964, #99823C)",
@@ -31,7 +33,7 @@ function TellUs() {
           <div className="rounded-full bg-primary px-8 py-2 text-sm text-dark">
             Contact Security
           </div>
-        </Button>
+        </Link>
       </div>
     </motion.main>
   );

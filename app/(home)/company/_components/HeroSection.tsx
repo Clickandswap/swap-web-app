@@ -22,7 +22,7 @@ function HeroSection() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="font-semibold md:leading-12 md:text-4xl text-2xl md:w-[40%] mx-auto font-space_grotesk text-center mt-4"
       >
-        Building the future of cross-border payments.
+        Building the future of <br /> cross-border payments.
       </motion.h2>
 
       <motion.div
@@ -37,14 +37,14 @@ function HeroSection() {
           mass: 0.8,
           type: "spring",
         }}
-        className="w-fit mx-auto mt-6"
+        className="w-full mx-auto mt-2"
       >
         <Image
           src={"/company_page/business_plan.webp"}
           alt="Business Plan"
-          width={500}
-          height={200}
-          className="w-auto h-auto object-contain"
+          width={1000}
+          height={1000}
+          className="w-full h-auto object-contain"
           loading="eager"
           priority
         />
